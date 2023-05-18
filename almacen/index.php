@@ -1,0 +1,166 @@
+<?php 
+include('../app/config.php');
+include('../layout/sesion.php');
+include('../layout/parte1.php');
+include('../app/controllers/almacen/listado_de_productos.php');
+?>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Listado de Productos</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+                  <div class="d-flex flex-row justify-content-start">
+                  <span class="mr-2">
+                    <i class="fas fa-square text-danger"></i> POR AGOTARSE
+                  </span>
+                  <span >
+                    <i class="fas fa-square text-cyan"></i> DEMASIADO PRODUCTO
+                  </span>
+                </div>
+          </div>
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="content ">
+      <div class="container-fluid">
+        <div class="row">
+            <div class ="col-md-12">
+              <div class="card card-outline card-primary">
+                <div class="card-header">
+                  <h3 class="card-title">Productos Registrados</h3>
+                  
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
+                    </button>
+                  </div>
+                  <!-- /.card-tools -->
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body" style="display: block;">
+                <div class="table table-responsive">
+                <table id="example1" class="table table-bordered table-striped table-sm">
+                  <thead>
+                  <tr>
+                        <th><center># Pro.</center></th>
+                        <th><center>Código Producto</center></th>
+                        <th><center>Categoría</center></th>
+                        <th><center>Nombre</center></th>
+                        <th><center>Imagen</center></th>
+                        <th><center>Descripción</center></th>
+                        <th><center>Stock</center></th>
+                        <th><center>Precio Compra</center></th>
+                        <th><center>Precio Venta</center></th>
+                        <th><center>Fecha Compra</center></th>
+                        <th><center>Usuario</center></th>
+                        <th><center>Acciones</center></th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                        <?php 
+                          $contador = 0;
+                          foreach ($productos_datos as $producto_dato){
+                            $id_producto = $producto_dato['id_producto'] ?>
+                            <tr>
+                                <td><center><?php echo $contador = $contador + 1?></center></td>
+                                <td><center><?php echo $producto_dato['codigo']?></center></td>
+                                <td><center><?php echo $producto_dato['nombre_categoria']?></center></td>
+                                <td><center><?php echo $producto_dato['nombre']?></center></td>
+                                <td><img src="<?php echo $URL."/almacen/img_productos/".$producto_dato['imagen']?>" alt="" width="100px" height="80px"></td>
+                                <td><center><?php echo $producto_dato['descripcion']?></center></td>
+
+                                <?php 
+                                 $stock_actual = $producto_dato['stock'];
+                                 $stock_minimo = $producto_dato['stock_minimo'];
+                                 $stock_maximo = $producto_dato['stock_maximo'];
+
+                                 if ($stock_actual > $stock_maximo){ ?>
+                                    <td style="background-color:#45B39D;"><center><?php echo $producto_dato['stock']?></center></td>
+                                 <?php
+                                 }else if ($stock_actual < $stock_minimo) { ?>
+                                  <td style="background-color:#E13939";><center><?php echo $producto_dato['stock']?></center></td>
+                                <?php
+                                 }else{ ?>
+                                  <td><center><?php echo $producto_dato['stock']?></center></td>
+                                  <?php
+                                 }
+
+                                ?>
+                                <td><center><?php echo $producto_dato['precio_compra']?></center></td>
+                                <td><center><?php echo $producto_dato['precio_venta']?></center></td>
+                                <td><center><?php echo $producto_dato['fecha_ingreso']?></center></td>
+                                <td><center><?php echo $producto_dato['email']?></center></td>
+                                <td><center>
+                                  <div class="btn-group">
+                                     <a href="./show.php?id=<?php echo $id_producto;?>" id type="button" class="btn btn-info btn-sm"><i class="fa fa-eye"></i> Ver</a>
+                                     <a href="./update.php?id=<?php echo $id_producto;?>" type="button" class="btn btn-success btn-sm"><i class="fa fa-pen"> Editar</i></a>
+                                     <a href="./delete.php?id=<?php echo $id_producto;?>" type="button" class="btn btn-danger btn-sm"><i class="fa fa-trash"> Borrar</i></a>
+                                   </div>
+                          </center>
+                            </td> 
+                            </tr>    
+                            <?php 
+                          }
+                        ?>
+                    </tbody>
+                </table>
+                </div>
+                  
+                </div>
+                <!-- /.card-body -->
+              </div>
+            </div>
+        </div>
+
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+  </div>
+
+
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+ 
+  <!-- /.control-sidebar -->
+<?php include('../layout/mensajes.php')?>
+<?php include('../layout/parte2.php') ?>
+<script>
+  $(function () {
+    $("#example1").DataTable({
+      "pageLength": 5,
+          language: {
+              "emptyTable": "No hay información",
+              "decimal": "",
+              "info": "Mostrando _START_ a _END_ de _TOTAL_ Roles",
+              "infoEmpty": "Mostrando 0 a 0 de 0 Usuarios",
+              "infoFiltered": "(Filtrado de _MAX_ total Roles)",
+              "infoPostFix": "",
+              "thousands": ",",
+              "lengthMenu": "Mostrar _MENU_ Roles",
+              "loadingRecords": "Cargando...",
+              "processing": "Procesando...",
+              "search": "Buscador:",
+              "zeroRecords": "Sin resultados encontrados",
+              "paginate": {
+                  "first": "Primero",
+                  "last": "Ultimo",
+                  "next": "Siguiente",
+                  "previous": "Anterior"
+              }
+             },
+      "responsive": true, "lengthChange": true, "autoWidth": false,
+      "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+  });
+</script>
