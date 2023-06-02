@@ -13,7 +13,7 @@ include('../app/controllers/clientes/listado_de_cliente.php');
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-12">
-            <h1 class="m-0">Listado de Clientes
+            <h1 class="m-0">Listado de Clientes 
             <button type="button" class="btn btn-info" data-toggle="modal"
                 data-target="#modal-agregar-cliente">
                 <i class="fa fa-plus-circle" aria-hidden="true"></i> Agregar Cliente
@@ -34,7 +34,7 @@ include('../app/controllers/clientes/listado_de_cliente.php');
             <div class ="col-md-12">
               <div class="card card-outline card-primary">
                 <div class="card-header">
-                  <h3 class="card-title">Clientes Registrados</h3>
+                  <h3 class="card-title">Clientes Registrados </h3>
 
                   <div class="card-tools">
                     <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
