@@ -90,5 +90,15 @@
 <script src="../public/templates/AdminLTE-3.2.0/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
 <script src="../public/templates/AdminLTE-3.2.0/dist/js/adminlte.min.js"></script>
+
+<div class="🤚">
+	<div class="👉"></div>
+	<div class="👉"></div>
+	<div class="👉"></div>
+	<div class="👉"></div>
+	<div class="🌴"></div>		
+	<div class="👍"></div>
+</div>
+
 </body>
 </html>
