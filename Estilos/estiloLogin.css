@@ -33,10 +33,10 @@ boton:hover {
 
 }
 
-#login-box-msg{
+#login-box-msg {
   font-size: 30px;
   
-color: #2b7cb3;
+color: #0e5a41;
   
 
 
@@ -197,4 +197,3 @@ color: #2b7cb3;
     transform: rotate(50deg) scale(1);
   }
 }
-
