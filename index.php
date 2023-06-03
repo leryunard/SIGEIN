@@ -6,10 +6,6 @@ include('app/controllers/usuarios/listado_de_usuarios.php');
 include('app/controllers/roles/listado_de_roles.php');
 include('app/controllers/categorias/listado_de_categorias.php');
 include('app/controllers/almacen/listado_de_productos.php');
-include('app/controllers/proveedores/listado_de_proveedores.php');
-include('app/controllers/compras/listado_de_compras.php');
-include('app/controllers/ventas/listado_de_ventas.php');
-include('app/controllers/clientes/listado_de_cliente.php');
 ?>
 
   <!-- Content Wrapper. Contains page content -->
@@ -121,109 +117,8 @@ include('app/controllers/clientes/listado_de_cliente.php');
               </a>
             </div>
           </div>
-          
-
-          <!-- PROVEEDORES -->
-          <div class="col-lg-3 col-6">
-            <!-- small card -->
-            <div class="small-box bg-gradient-dark">
-              <div class="inner">
-                <?php 
-                $proveedor = 0;
-                foreach ($proveedores_datos as $proveedor_dato){ 
-                  $proveedor = $proveedor + 1;} ?>
-                    <h3><?php echo $proveedor;?></h3>
-                <p>Proveedores Registrados</p>
-              </div>
-              <a href ="<?php echo $URL. '/proveedores/index.php'?>">             
-                 <div class="icon">
-                  <i class="nav-icon fas fa-parachute-box"></i>
-                 </div></a>
-              <a href="<?php echo $URL.'/proveedores/index.php';?>" class="small-box-footer">
-                Más detalles <i class="fas fa-arrow-circle-right"></i>
-              </a>
-            </div>
-          </div>
-
-
-           <!-- COMPRAS -->
-            <div class="col-lg-3 col-6">
-            <!-- small card -->
-            <div class="small-box bg-gradient-olive">
-              <div class="inner">
-                <?php 
-                $compra = 0;
-                foreach ($compras_datos as $compra_dato){ 
-                  $compra = $compra + 1;} ?>
-                    <h3><?php echo $compra;?></h3>
-                <p>Compras Registradas</p>
-              </div>
-              <a href ="<?php echo $URL. '/compras/create.php'?>">             
-                 <div class="icon">
-                  <i class="nav-icon fas fa-cart-plus"></i>
-                 </div></a>
-              <a href="<?php echo $URL.'/compras/index.php';?>" class="small-box-footer">
-                Más detalles <i class="fas fa-arrow-circle-right"></i>
-              </a>
-            </div>
-          </div>
-
-
-         <!-- VENTAS -->
-           <div class="col-lg-3 col-6">
-            <!-- small card -->
-            <div class="small-box bg-gradient-indigo">
-              <div class="inner">
-                <?php 
-                $venta = 0;
-                foreach ($ventas_datos as $venta_dato){ 
-                  $venta = $venta + 1;} ?>
-                    <h3><?php echo $venta;?></h3>
-                <p>Ventas Registradas</p>
-              </div>
-              <a href ="<?php echo $URL. '/ventas/create.php'?>">             
-                 <div class="icon">
-                  <i class="nav-icon fas fa-shopping-bag"></i>
-                 </div></a>
-              <a href="<?php echo $URL.'/ventas/index.php';?>" class="small-box-footer">
-                Más detalles <i class="fas fa-arrow-circle-right"></i>
-              </a>
-            </div>
-          </div>
-
-
-          
-         <!-- VENTAS -->
-         <div class="col-lg-3 col-6">
-            <!-- small card -->
-            <div class="small-box bg-gradient-lightblue">
-              <div class="inner">
-                <?php 
-                $cliente = 0;
-                foreach ($clientes_datos as $cliente_dato){ 
-                  $cliente = $cliente + 1;} ?>
-                    <h3><?php echo $cliente;?></h3>
-                <p>Clientes Registrados</p>
-              </div>
-              <a href ="<?php echo $URL. '/clientes/index.php'?>">             
-                 <div class="icon">
-                  <i class="nav-icon fas fa-user-friends"></i>
-                 </div></a>
-              <a href="<?php echo $URL.'/clientes/index.php';?>" class="small-box-footer">
-                Más detalles <i class="fas fa-arrow-circle-right"></i>
-              </a>
-            </div>
-          </div>
-
-        </div>
-        <!-- /.row -->
-      </div><!-- /.container-fluid -->
+      </div>
+      </div>
     </div>
-    <!-- /.content -->
   </div>
-  <!-- /.content-wrapper -->
-
-  <!-- Control Sidebar -->
- 
-  <!-- /.control-sidebar -->
 <?php include('layout/parte2.php') ?>
