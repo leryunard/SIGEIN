@@ -16,7 +16,7 @@
     }
 
 
-    $URL = "http://localhost/sigein";
+    $URL = "http://localhost/www.sistemadeventas.com";
 
     date_default_timezone_set("America/El_Salvador");
     $fechaHora = date('Y-m-d H:i:s');

@@ -18,6 +18,11 @@ include('../layout/parte1.php');
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
+    <?php 
+      if ($nombre_rol == "ADMINISTRADOR"){ ?>
+
+
+
 
     <!-- Main content -->
     <div class="content">
@@ -85,7 +90,63 @@ include('../layout/parte1.php');
               </div>
             </div>
         </div>
+          <?php }else {?>
+            <div class="row">
+            <div class ="col-md-12">
+              <div class="card card-outline card-primary">
+                <div class="card-header">
+                  <h3 class="card-title">Usuarios Registrados</h3>
 
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
+                    </button>
+                  </div>
+                  <!-- /.card-tools -->
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body" style="display: block;">
+                  <table id="example1" class="table table-bordered table-striped">
+                  <thead>
+                  <tr>
+                        <th><center># Usuario</center></th>
+                        <th><center>Nombres</center></th>
+                        <th><center>Email</center></th>
+                        <th><center>Rol</center></th>
+                        
+                  </tr>
+                  </thead>
+                  <tbody>
+                        <?php 
+                          include('../app/controllers/usuarios/listado_de_usuarios.php');
+                          $contador = 0;
+                          foreach ($usuarios_datos as $usuario_dato){
+                           $id_usuario =$usuario_dato['id_usuario']; ?>
+                          <tr>
+                            <td><center><?php echo $contador = $contador + 1?></center></td>
+                            <td><center><?php echo $usuario_dato['nombres']?></center></td>
+                            <td><center><?php echo $usuario_dato['email']?></center></td>
+                            <td><center><?php echo $usuario_dato['rol']?></center></td>
+                          </tr>
+                            <?php 
+                          }
+                        ?>
+                    </tbody>
+                  <tfoot>
+                  <tr>
+                  <th><center># Usuario</center></th>
+                        <th><center>Nombres</center></th>
+                        <th><center>Email</center></th>
+                        <th><center>Rol</center></th>
+                        
+                  </tr>
+                  </tfoot>
+                </table>
+                </div>
+                <!-- /.card-body -->
+              </div>
+            </div>
+        </div>
+            <?php }?>
         <!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>

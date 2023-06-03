@@ -19,6 +19,9 @@ include('../app/controllers/roles/listado_de_roles.php');
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
+    <?php 
+
+      if ($nombre_rol == 'ADMINISTRADOR'){ ?>
 
     <!-- Main content -->
     <div class="content">
@@ -56,6 +59,7 @@ include('../app/controllers/roles/listado_de_roles.php');
                             <td><center>
                                <div class="btn-group">
                                   <a href="./update.php?id=<?php echo $id_rol;?>" type="button" class="btn btn-success"><i class="fa fa-pen"> Editar</i></a>
+                                  <a href="./delete.php?id=<?php echo $id_rol;?>" type="button" class="btn btn-danger"><i class="fa fa-trash"> Borrar</i></a>
                                </div>
                           </center>
                             </td> 
@@ -77,7 +81,59 @@ include('../app/controllers/roles/listado_de_roles.php');
               </div>
             </div>
         </div>
+              <?php
+            }else{ ?>
+                      <div class="row">
+            <div class ="col-md-12">
+              <div class="card card-outline card-primary">
+                <div class="card-header">
+                  <h3 class="card-title">Roles Registrados</h3>
 
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
+                    </button>
+                  </div>
+                  <!-- /.card-tools -->
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body" style="display: block;">
+                  <table id="example1" class="table table-bordered table-striped">
+                  <thead>
+                  <tr>
+                        <th><center>ID ROL</center></th>
+                        <th><center>Roles</center></th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                        <?php 
+                          $contador = 0;
+                          foreach ($roles_datos as $rol_dato){
+                           $id_rol =$rol_dato['id_rol']; ?>
+                          <tr>
+                            <td><center><?php echo $rol_dato['id_rol']?></center></td>
+                            <td><center><?php echo $rol_dato['rol']?></center></td>
+                          </tr>
+                            <?php 
+                          }
+                        ?>
+                    </tbody>
+                  <tfoot>
+                  <tr>
+                  <th><center>ID ROL</center></th>
+                        <th><center>Rol</center></th>
+                        
+                  </tr>
+                  </tfoot>
+                </table>
+                </div>
+                <!-- /.card-body -->
+              </div>
+            </div>
+        </div>
+
+            <?php
+            }
+          ?>
         <!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>

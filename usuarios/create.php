@@ -19,6 +19,23 @@ include('../app/controllers/roles/listado_de_roles.php');
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
+    <?php 
+    
+    if ($nombre_rol == 'EMPLEADO') { ?>
+              <div class="container">
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">No tienes permiso para crear usuario</h4>
+            <p class="card-text">Lo siento, no tienes los permisos necesarios para crear un usuario en este sistema.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <?php
+    }else { ?>
 
     <!-- Main content -->
     <div class="content">
@@ -85,6 +102,9 @@ include('../app/controllers/roles/listado_de_roles.php');
         <!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>
+    <?php
+    }
+    ?>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->

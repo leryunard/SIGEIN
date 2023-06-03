@@ -19,7 +19,7 @@ include('../app/controllers/usuarios/show_usuario.php');
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
-
+    
     <!-- Main content -->
     <div class="content">
       <div class="container-fluid">
