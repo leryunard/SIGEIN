@@ -1,6 +1,6 @@
 
 #myBody {
-    background-color: #ffffff;
+    background-color: #9fcacf;
   }
 #myBoton{
     background: #FBCA1F;
@@ -14,9 +14,22 @@
 }
 #myTitulo{
   font-size: 40px;
-  color: #030fb6;
+  
+
+  color: #1CA085;
+
 
 }
+
+#login-box-msg{
+  font-size: 30px;
+  
+color: #2b7cb3;
+  
+
+
+}
+
 #myDiv {
-  border: 10px solid rgb(0, 47, 255);
+  border: 10px solid rgb(63, 89, 201);
 }
