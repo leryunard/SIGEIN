@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <title>Sistemas de Inventario</title>
-  <link rel="icon" href="imagen/car.ico" type="image/x-icon">
+  <link rel="icon" href="imagen/logo.ico" type="image/x-icon">
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
