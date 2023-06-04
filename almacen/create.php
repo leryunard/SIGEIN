@@ -199,7 +199,7 @@ include('../app/controllers/categorias/listado_de_categorias.php');
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-
+</div>
   <!-- Control Sidebar -->
  
   <!-- /.control-sidebar -->
