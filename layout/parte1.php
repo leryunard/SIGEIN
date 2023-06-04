@@ -37,7 +37,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">SISTEMA DE INVENTARIO</a>
+        <a href="#" class="nav-link"><p><strong>SISTEMA DE INVENTARIO LUBRICANTES Y ACCESORIOS ESPAÑA</strong></a></p>
       </li>
     </ul>
 
@@ -79,7 +79,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Brand Logo -->
     <a href="<?php echo $URL;?>/index.php" class="brand-link">
       <img src="<?php echo $URL;?>../imagen/logo.jpg" alt="Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">Inventario</span>
+      <span class="brand-text font-weight-light"><strong> Estas en el Inventario</strong></span>
     </a>
 
     <!-- Sidebar -->
