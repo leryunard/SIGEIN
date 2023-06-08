@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title><strong> <p style=color:red>Sistema de Inventario</title></P></strog>
+  <title>Sistema de Inventario</title>
   <link rel="icon"  href="../imagen/logo.ico">
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -79,7 +79,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Brand Logo -->
     <a href="<?php echo $URL;?>/index.php" class="brand-link">
       <img src="<?php echo $URL;?>../imagen/logo.jpg" alt="Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light"> <p style= color:green><strong> INVENTARIO</strong></span> </p>
+      <span class="brand-text font-weight-light"> <p style= color:green><strong><marquee behavior= alternate> INVENTARIO</marquee></strong></span> </p>
     </a>
 
     <!-- Sidebar -->
