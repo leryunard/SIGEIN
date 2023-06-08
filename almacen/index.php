@@ -12,7 +12,7 @@ include('../app/controllers/almacen/listado_de_productos.php');
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Listado de Productos</h1>
+            <h1 class="m-0"><p style=color:green>Listado de Productos</h1></p>
           </div><!-- /.col -->
           <div class="col-sm-6">
                   <div class="d-flex flex-row justify-content-start">

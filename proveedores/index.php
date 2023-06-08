@@ -12,7 +12,7 @@ include('../app/controllers/proveedores/listado_de_proveedores.php');
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-12">
-            <h1 class="m-0">Listado de Proveedores
+            <h1 class="m-0"><p style=color:green>Listado de Proveedores</p>
             <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#modal-create">
              <i class="fa fa-plus"></i> Nuevo Proveedor
             </button>
