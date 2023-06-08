@@ -37,10 +37,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">  <p style=color:black> <strong>SISTEMA DE INVENTARIO LUBRICANTES Y ACCESORIOS ESPAÑA </strong> </a></p>
+       <table>
+      <a href="#" class="nav-link">  <p style=color:black><strong><marquee> SISTEMA DE INVENTARIO LUBRICANTES Y ACCESORIOS ESPAÑA </strong> </a></p></marquee>
+       </table>
       </li>
     </ul>
-
+   
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
       <!-- Navbar Search
