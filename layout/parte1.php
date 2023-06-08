@@ -236,7 +236,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <li class="nav-item">
                 <a href="<?php echo $URL;?>/proveedores/index.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Listado de proveedores</p>
+                  <p style=color:yellow>Listado de proveedores</p>
                 </a>
               </li>
             </ul>
@@ -281,7 +281,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <li class="nav-item">
                 <a href="<?php echo $URL;?>/clientes/index.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Listado de Clientes</p>
+                  <p style=color:pink>Listado de Clientes</p>
                 </a>
               </li>
             </ul>
