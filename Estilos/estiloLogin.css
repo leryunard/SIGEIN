@@ -3,11 +3,12 @@
     background-color: #9fcacf;
   }
 #myBoton{
-  margin: 12px;
-  height: 50px;
-  width: 120px;
+  margin: 9px;
+  height: 35px;
+  width: 115px;
   border-radius: 10px;
   background: #333;
+  display:flex;
   justify-content: center;
   align-items: center;
   box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222;

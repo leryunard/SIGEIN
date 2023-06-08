@@ -37,7 +37,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link"><p><strong>SISTEMA DE INVENTARIO LUBRICANTES Y ACCESORIOS ESPAÑA</strong></a></p>
+        <a href="#" class="nav-link"><p style="color: red;"> <strong>SISTEMA DE INVENTARIO LUBRICANTES Y ACCESORIOS ESPAÑA</p></strong></a>
       </li>
     </ul>
 
