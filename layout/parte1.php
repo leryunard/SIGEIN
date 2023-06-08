@@ -81,7 +81,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Brand Logo -->
     <a href="<?php echo $URL;?>/index.php" class="brand-link">
       <img src="<?php echo $URL;?>../imagen/logo.jpg" alt="Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light"> <p style= color:green><strong><marquee behavior= alternate> INVENTARIO</marquee></strong></span> </p>
+      <span class="brand-text font-weight-light"> <p style= color:#7FFF00><strong><marquee behavior= alternate> INVENTARIO</marquee></strong></span> </p>
     </a>
 
     <!-- Sidebar -->
@@ -113,7 +113,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <li class="nav-item">
                 <a href="<?php echo $URL;?>/usuarios/index.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p> <strong> <p style=color:black>Listado de Usuarios</p></strong>
+                  <p> <strong> <p style=color:#0066CC >Listado de Usuarios</p></strong>
                 </a>
               </li>
               <li class="nav-item">
