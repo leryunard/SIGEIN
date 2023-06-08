@@ -12,7 +12,7 @@ include('../app/controllers/roles/listado_de_roles.php');
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-12">
-            <h1 class="m-0">Creación de Usuarios</h1>
+            <h1 class="m-0"><p style=color:#1E90FF>Creación de Usuarios</h1></p>
           </div><!-- /.col -->
 
         </div><!-- /.row -->

@@ -48,7 +48,7 @@
       <a id="myTitulo" class="h1"><b>Sistema de inventario</b></a>
     </div>
     <div class="card-body">
-      <p class="login-box-msg"><p style=color:black><center>Ingresar datos de usuario</p></p>
+      <p class="login-box-msg"><p style=color:black><strong><center>Ingresar datos de usuario</strong></p></p>
 
       <form action="../app/controllers/login/ingreso.php" method="post">
         <div class="input-group mb-3">

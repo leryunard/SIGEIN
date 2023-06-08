@@ -139,13 +139,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <li class="nav-item">
                 <a href="<?php echo $URL;?>/roles/index.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Listado de roles</p>
+                  <p style= color:#7FFFD4>Listado de roles</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="<?php echo $URL;?>/roles/create.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p style= color:green> Creación de rol</p>
+                  <p style= color:#FF3366 > Creación de rol</p>
                 </a>
               </li>
             </ul>
