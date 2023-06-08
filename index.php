@@ -11,7 +11,6 @@ include('app/controllers/compras/listado_de_compras.php');
 include('app/controllers/ventas/listado_de_ventas.php');
 include('app/controllers/clientes/listado_de_cliente.php');
 ?>
-
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
