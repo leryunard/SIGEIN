@@ -112,7 +112,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <li class="nav-item">
                 <a href="<?php echo $URL;?>/usuarios/index.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p> <strong> <p style=color:#0066CC >Listado de Usuarios</p></strong>
+                  <p> <strong> <p style=color:#0066CC>Listado de Usuarios</p></strong>
                 </a>
               </li>
               <li class="nav-item">
