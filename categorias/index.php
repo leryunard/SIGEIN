@@ -12,7 +12,7 @@ include('../app/controllers/categorias/listado_de_categorias.php');
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-12">
-            <h1 class="m-0">Listado de Categorías
+            <h1 class="m-0"><p style=color:red>Listado de Categorías </p>
             <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#modal-create">
              <i class="fa fa-plus"></i> Nueva Categoría
             </button>

@@ -7,7 +7,6 @@ include('app/controllers/roles/listado_de_roles.php');
 include('app/controllers/categorias/listado_de_categorias.php');
 include('app/controllers/almacen/listado_de_productos.php');
 ?>
-
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -15,7 +14,7 @@ include('app/controllers/almacen/listado_de_productos.php');
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-12">
-            <h1 class="m-0">Bienvenido al Sistema de Ventas - <strong><?php echo $nombre_rol;?></strong></h1>
+            <h1 class="m-0">Bienvenido al Sistema de Inventario - <strong><?php echo $nombre_rol;?></strong></h1>
           </div><!-- /.col -->
 
         </div><!-- /.row -->

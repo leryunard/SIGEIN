@@ -5,7 +5,7 @@
             
                 <script>
                   Swal.fire({
-                    position: 'top-end',
+                    position: 'center',
                     icon: '<?php echo $icono?>',
                     title: '<?php echo $respuesta ?>',
                     showConfirmButton: false,
