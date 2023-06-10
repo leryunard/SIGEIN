@@ -6,18 +6,18 @@ include('../layout/parte1.php');
 
 
   <div class="content-wrapper">
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-12">
-            <h1 class="m-0">AQUÍ DEBERÁN IR LOS CLIENTES DE LA EMPRESA
-            </h1>
-
+  <div class="row justify-content-center mt-5">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Historia de Clientes.</h4>
+            <p class="card-text">Se realizará en el segundo Sprint</p>
           </div>
-
         </div>
       </div>
     </div>
+
+
 
  </div>
 

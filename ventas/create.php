@@ -4,21 +4,18 @@ include('../layout/sesion.php');
 include('../layout/parte1.php');
 ?>
 
-  <!-- Content Wrapper. Contains page content -->
+
   <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-12">
-            <h1 class="m-0">AQUÍ SE PODRÁ HACER EL REGISTRO DE UNA NUEVA VENTA</h1>
-          </div><!-- /.col -->
-
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
+  <div class="row justify-content-center mt-5">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Crear Venta</h4>
+            <p class="card-text">Se realizará en el segundo Sprint</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- /.content-header -->
-
   </div>
 
 <?php include('../layout/parte2.php') ?>
