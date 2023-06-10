@@ -1,6 +1,8 @@
 
   <!-- Main Footer -->
-  
+  <footer class="main-footer">
+    <h1><a href="../nosotros/nosotros.php">Sobre nosotros</a></h1>
+  </footer>
 </div>
 <!-- ./wrapper -->
 <!-- REQUIRED SCRIPTS -->
