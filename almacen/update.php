@@ -124,13 +124,13 @@ include('../app/controllers/almacen/show_productos.php')
                                 <div class="col-md-2">
                                     <div class="form-group">
                                       <label for="">Precio Compra:</label>
-                                      <input type="number" name="precio_compra" id="" class="form-control" value="<?php echo $precio_compra?>" required>
+                                      <input type="number" name="precio_compra" id="" class="form-control" value="<?php echo $precio_compra?>" step="any" required>
                                     </div>
                                 </div>
                                 <div class="col-md-2">
                                     <div class="form-group">
                                       <label for="">Precio Venta:</label>
-                                      <input type="number" name="precio_venta" id="" class="form-control" value="<?php echo $precio_venta?>" required>
+                                      <input type="number" name="precio_venta" id="" class="form-control" value="<?php echo $precio_venta?>" step="any" required>
                                     </div>
                                 </div>
                                 <div class="col-md-2">
