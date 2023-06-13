@@ -133,13 +133,13 @@ include('../app/controllers/categorias/listado_de_categorias.php');
                                 <div class="col-md-2">
                                     <div class="form-group">
                                       <label for="">Precio Compra:</label>
-                                      <input type="number" name="precio_compra" id="" class="form-control" placeholder="Precio-Compra" required>
+                                      <input type="number" name="precio_compra" id="" class="form-control" placeholder="Precio-Compra" step="any" required>
                                     </div>
                                 </div>
                                 <div class="col-md-2">
                                     <div class="form-group">
                                       <label for="">Precio Venta:</label>
-                                      <input type="number" name="precio_venta" id="" class="form-control" placeholder="Precio-Venta" required>
+                                      <input type="number" name="precio_venta" id="" class="form-control" placeholder="Precio-Venta" step="any" required>
                                     </div>
                                 </div>
                                 <div class="col-md-2">
