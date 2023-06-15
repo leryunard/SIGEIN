@@ -1,7 +1,7 @@
 
   <!-- Main Footer -->
   <footer class="main-footer">
-    <h1><a href="../nosotros/nosotros.php">Sobre nosotros</a></h1>
+    <h4><center><a href="../nosotros/nosotros.php" target="_blank">Sobre nosotros</a></center></h4>
   </footer>
 </div>
 <!-- ./wrapper -->
