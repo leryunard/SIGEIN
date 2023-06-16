@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 15-06-2023 a las 01:30:30
--- Versión del servidor: 10.4.25-MariaDB
--- Versión de PHP: 8.1.10
+-- Tiempo de generación: 16-06-2023 a las 07:39:53
+-- Versión del servidor: 10.4.28-MariaDB
+-- Versión de PHP: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -29,16 +29,16 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `tb_almacen` (
   `id_producto` int(11) NOT NULL,
-  `codigo` varchar(255) COLLATE utf8_spanish_ci NOT NULL,
-  `nombre` varchar(255) COLLATE utf8_spanish_ci NOT NULL,
-  `descripcion` text COLLATE utf8_spanish_ci DEFAULT NULL,
+  `codigo` varchar(255) NOT NULL,
+  `nombre` varchar(255) NOT NULL,
+  `descripcion` text DEFAULT NULL,
   `stock` int(11) NOT NULL,
   `stock_minimo` int(11) DEFAULT NULL,
   `stock_maximo` int(11) DEFAULT NULL,
-  `precio_compra` varchar(255) COLLATE utf8_spanish_ci NOT NULL,
-  `precio_venta` varchar(255) COLLATE utf8_spanish_ci NOT NULL,
+  `precio_compra` varchar(255) NOT NULL,
+  `precio_venta` varchar(255) NOT NULL,
   `fecha_ingreso` date NOT NULL,
-  `imagen` text COLLATE utf8_spanish_ci DEFAULT NULL,
+  `imagen` text DEFAULT NULL,
   `id_usuario` int(11) NOT NULL,
   `id_categoria` int(11) NOT NULL,
   `fyh_creacion` datetime NOT NULL,
@@ -50,7 +50,7 @@ CREATE TABLE `tb_almacen` (
 --
 
 INSERT INTO `tb_almacen` (`id_producto`, `codigo`, `nombre`, `descripcion`, `stock`, `stock_minimo`, `stock_maximo`, `precio_compra`, `precio_venta`, `fecha_ingreso`, `imagen`, `id_usuario`, `id_categoria`, `fyh_creacion`, `fyh_actualizacion`) VALUES
-(3, 'P-00003', '1/4 Aceite 0W20 FULL SINTÉTICO Valvoline', 'Actualizar tu aceite de motor a Valvoline Full Synthetic High Mileage con tecnología MaxLife puede ayudarte a aumentar la longevidad de tu automóvil, camión o SUV con más de 75,000 millas. Está demostrado que protege tu motor de alto kilometraje contra el desgaste, la fricción, el calor y los depósitos, las principales causas de descomposición del motor y reparaciones costosas. Nuestra formulación exclusiva va más allá de los estándares de la industria para proteger tu motor. Está fortificado con aditivos mejorados para el desgaste y agentes que combaten la fricción para proteger los componentes críticos del motor, detergentes adicionales para limpiar dentro de tu motor y acondicionadores de sellado premium para restaurar los sellos de envejecimiento y evitar fugas. Los modificadores de viscosidad superior y los aceites base de alta calidad ayudan a que funcione excepcionalmente tanto en temperaturas altas como bajas. Diseñada con ingenio, probada con tenacidad, y probada con propósito, nuestra fórmula fue innovadora en Estados Unidos con un siglo y medio de experiencia práctica de la marca original de aceite de motor.', 50, 20, 100, '15', '20', '2023-06-12', '2023-06-12-01-48-58__Valvoline.jpg', 7, 13, '2023-06-12 13:48:58', '0000-00-00 00:00:00'),
+(3, 'P-00003', '1/4 Aceite 0W20 FULL SINTÉTICO Valvoline', 'Actualizar tu aceite de motor a Valvoline Full Synthetic High Mileage con tecnología MaxLife puede ayudarte a aumentar la longevidad de tu automóvil, camión o SUV con más de 75,000 millas. Está demostrado que protege tu motor de alto kilometraje contra el desgaste, la fricción, el calor y los depósitos, las principales causas de descomposición del motor y reparaciones costosas. Nuestra formulación exclusiva va más allá de los estándares de la industria para proteger tu motor. Está fortificado con aditivos mejorados para el desgaste y agentes que combaten la fricción para proteger los componentes críticos del motor, detergentes adicionales para limpiar dentro de tu motor y acondicionadores de sellado premium para restaurar los sellos de envejecimiento y evitar fugas. Los modificadores de viscosidad superior y los aceites base de alta calidad ayudan a que funcione excepcionalmente tanto en temperaturas altas como bajas. Diseñada con ingenio, probada con tenacidad, y probada con propósito, nuestra fórmula fue innovadora en Estados Unidos con un siglo y medio de experiencia práctica de la marca original de aceite de motor.', 50, 20, 100, '15', '20', '2023-06-12', '2023-06-12-01-48-58__Valvoline.jpg', 7, 13, '2023-06-12 13:48:58', '2023-06-15 15:00:58'),
 (4, 'P-00004', 'Pachón Aceite 0W20 FULL SINTÉTICO Valvoline', 'El aceite de motor sintético completo Valvoline de alto kilometraje con tecnología Maxlife está especialmente formulado para motores de mayor kilometraje. El aceite de motor sintético completo Valvoline de alto kilometraje con tecnología Maxlife está formulado con aceites base sintéticos de la más alta calidad además de aditivos especiales para combatir los efectos del envejecimiento y aumentar la vida útil de tu motor.', 70, 20, 100, '95', '100', '2023-06-12', '2023-06-12-01-56-19__2.jpg', 7, 13, '2023-06-12 13:56:19', '0000-00-00 00:00:00'),
 (5, 'P-00005', '1/4 Aceite 5W20 FULL SINTÉTICO Valvoline', 'Valvoline El aceite de motor sintético avanzado ofrece la máxima protección para automóviles, camiones y SUV que trabajan duro en las condiciones más duras. Diseñado con tecnología aditiva avanzada, está especialmente formulado para combatir el estrés severo del motor de: conducción de parada y marcha, temperaturas extremas y transporte y remolque. Cuando quieras mantener tu motor funcionando de la mejor manera, elige la máxima protección del aceite de motor sintético completo Valvoline Advanced.', 70, 20, 100, '13', '18', '2023-06-12', '2023-06-12-02-29-59__3.jpeg', 7, 13, '2023-06-12 14:29:59', '0000-00-00 00:00:00'),
 (6, 'P-00006', 'Pachón Aceite 5W20 FULL SINTÉTICO Valvoline', 'El aceite de motor sintético avanzado ofrece la máxima protección para automóviles, camiones y SUV que trabajan duro en las condiciones más duras. Diseñado con tecnología aditiva avanzada, está especialmente formulado para combatir el estrés severo del motor de: conducción de parada y marcha, temperaturas extremas y transporte y remolque. Cuando quieras mantener tu motor funcionando de la mejor manera, elige la máxima protección del aceite de motor sintético completo Valvoline Advanced.', 60, 20, 100, '85', '90', '2023-06-12', '2023-06-12-02-34-56__3.jpg', 7, 13, '2023-06-12 14:34:56', '0000-00-00 00:00:00'),
@@ -162,7 +162,8 @@ INSERT INTO `tb_almacen` (`id_producto`, `codigo`, `nombre`, `descripcion`, `sto
 (111, 'P-00111', 'Galón Aceite 20W50 Mineral UNIX', 'Resiste la degradación térmica y reduce la formación de depósitos para una mejor protección del motor durante más tiempo.\r\nLos aditivos actúan para mantener limpios los motores.\r\nProporciona una fuerte barrera de película para controlar la fricción, resistir el desgaste y evitar que las superficies metálicas entren en contacto.', 50, 20, 100, '19.75', '22.50', '2023-06-13', '2023-06-13-09-41-59__8.jpg', 7, 13, '2023-06-13 21:41:59', '0000-00-00 00:00:00'),
 (112, 'P-00112', '1/4 Aceite ATF Transmisión UNIX', 'ATF Multi-Vehículo UNIX es una fórmula avanzada equilibrada que utiliza una tecnología de aditivos superior y aceites base 100% sintéticos que ayudan a garantizar el máximo rendimiento de casi cualquier transmisión automática. Este producto de primera calidad cumple y supera los requisitos de fricción y desgaste de muchas transmisiones automáticas fabricadas después de 1983, incluidos muchos vehículos extranjeros.', 40, 20, 100, '4', '5.55', '2023-06-13', '2023-06-13-09-43-42__9.jpg', 7, 13, '2023-06-13 21:43:42', '2023-06-13 21:43:56'),
 (113, 'P-00113', '1/4 Aceite CVT Transmisión UNIX', 'El fluido UNIX CVT está especialmente formulado con una combinación única de aceites base completamente sintéticos y una avanzada tecnología de aditivos diseñada para las demandas específicas de las CVT.\r\n\r\nEl fluido UNIX  CVT está especialmente formulado con una combinación única de aceites base completamente sintéticos y una avanzada tecnología de aditivos diseñada para las demandas específicas de las CVT. Este producto de primera calidad se recomienda para su uso en la mayoría de las CVT accionadas por correa o cadena. No es un reemplazo de ATF.', 60, 20, 100, '9.45', '12', '2023-06-13', '2023-06-13-09-45-55__10.jpg', 7, 13, '2023-06-13 21:45:55', '0000-00-00 00:00:00'),
-(114, 'P-00114', '1/4 Aceite Dual Clutch Transmisión UNIX', 'El líquido de transmisiones automáticas para múltiples vehículos UNIX está diseñado para extender la vida útil de la transmisión y el funcionamiento suave de muchas transmisiones automáticas de una variedad de OEM.\r\n\r\nLíquido de transmisión automática de baja viscosidad UNIX es una fórmula avanzada equilibrada que utiliza una tecnología de aditivos superior y aceites de base 100% sintéticos, lo que ayuda a garantizar el máximo rendimiento de casi cualquier transmisión automática', 55, 20, 100, '9.45', '12', '2023-06-13', '2023-06-13-09-49-02__12.jpg', 7, 13, '2023-06-13 21:49:02', '0000-00-00 00:00:00');
+(114, 'P-00114', '1/4 Aceite Dual Clutch Transmisión UNIX', 'El líquido de transmisiones automáticas para múltiples vehículos UNIX está diseñado para extender la vida útil de la transmisión y el funcionamiento suave de muchas transmisiones automáticas de una variedad de OEM.\r\n\r\nLíquido de transmisión automática de baja viscosidad UNIX es una fórmula avanzada equilibrada que utiliza una tecnología de aditivos superior y aceites de base 100% sintéticos, lo que ayuda a garantizar el máximo rendimiento de casi cualquier transmisión automática', 55, 20, 100, '9.45', '12', '2023-06-13', '2023-06-13-09-49-02__12.jpg', 7, 13, '2023-06-13 21:49:02', '0000-00-00 00:00:00'),
+(115, 'P-00113', 'Refrigerante Prestone', 'Refrigerante concentrado al 33%', 50, 10, 60, '5.34', '10', '2023-06-15', '2023-06-15-03-06-23__93404.jpg', 10, 15, '2023-06-15 15:06:23', '0000-00-00 00:00:00');
 
 --
 -- Disparadores `tb_almacen`
@@ -202,7 +203,7 @@ CREATE TABLE `tb_carrito` (
 
 CREATE TABLE `tb_categoria` (
   `id_categoria` int(11) NOT NULL,
-  `nombre_categoria` varchar(255) COLLATE utf8_spanish_ci NOT NULL,
+  `nombre_categoria` varchar(255) NOT NULL,
   `fyh_creacion` datetime NOT NULL,
   `fyh_actualizacion` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
@@ -212,7 +213,9 @@ CREATE TABLE `tb_categoria` (
 --
 
 INSERT INTO `tb_categoria` (`id_categoria`, `nombre_categoria`, `fyh_creacion`, `fyh_actualizacion`) VALUES
-(13, 'ACEITE', '2023-06-12 13:44:29', '2023-06-14 17:20:46');
+(13, 'ACEITE', '2023-06-12 13:44:29', '2023-06-14 17:20:46'),
+(14, 'COMPONENTE ELECTRÓNICO', '2023-06-15 14:59:00', '0000-00-00 00:00:00'),
+(15, 'REFRIGERANTE', '2023-06-15 15:05:14', '0000-00-00 00:00:00');
 
 --
 -- Disparadores `tb_categoria`
@@ -237,10 +240,10 @@ DELIMITER ;
 
 CREATE TABLE `tb_clientes` (
   `id_cliente` int(11) NOT NULL,
-  `nombre_cliente` varchar(255) COLLATE utf8_spanish_ci NOT NULL,
-  `nit_cliente` varchar(255) COLLATE utf8_spanish_ci NOT NULL,
-  `celular_cliente` varchar(255) COLLATE utf8_spanish_ci DEFAULT NULL,
-  `email` varchar(255) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `nombre_cliente` varchar(255) NOT NULL,
+  `nit_cliente` varchar(255) NOT NULL,
+  `celular_cliente` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
   `fyh_creacion` datetime NOT NULL,
   `fyh_actualizacion` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
@@ -257,9 +260,9 @@ CREATE TABLE `tb_compras` (
   `num_compra` int(11) NOT NULL,
   `fecha_compra` date NOT NULL,
   `id_proveedor` int(11) NOT NULL,
-  `comprobante` varchar(255) COLLATE utf8_spanish_ci NOT NULL,
+  `comprobante` varchar(255) NOT NULL,
   `id_usuario` int(11) NOT NULL,
-  `precio_compra` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `precio_compra` varchar(50) NOT NULL,
   `cantidad` int(11) NOT NULL,
   `fyh_creacion` datetime NOT NULL,
   `fyh_actualizacion` datetime NOT NULL
@@ -273,12 +276,12 @@ CREATE TABLE `tb_compras` (
 
 CREATE TABLE `tb_proveedores` (
   `id_proveedor` int(11) NOT NULL,
-  `nombre_proveedor` varchar(255) COLLATE utf8_spanish_ci NOT NULL,
-  `celular` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
-  `telefono` varchar(50) COLLATE utf8_spanish_ci DEFAULT NULL,
-  `empresa` varchar(255) COLLATE utf8_spanish_ci NOT NULL,
-  `email` varchar(50) COLLATE utf8_spanish_ci DEFAULT NULL,
-  `direccion` varchar(255) COLLATE utf8_spanish_ci NOT NULL,
+  `nombre_proveedor` varchar(255) NOT NULL,
+  `celular` varchar(50) NOT NULL,
+  `telefono` varchar(50) DEFAULT NULL,
+  `empresa` varchar(255) NOT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  `direccion` varchar(255) NOT NULL,
   `fyh_creacion` datetime NOT NULL,
   `fyh_actualizacion` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
@@ -291,7 +294,7 @@ CREATE TABLE `tb_proveedores` (
 
 CREATE TABLE `tb_roles` (
   `id_rol` int(11) NOT NULL,
-  `rol` varchar(255) COLLATE utf8_spanish_ci NOT NULL,
+  `rol` varchar(255) NOT NULL,
   `fyh_creacion` datetime NOT NULL,
   `fyh_actualizacion` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
@@ -327,10 +330,10 @@ DELIMITER ;
 
 CREATE TABLE `tb_usuarios` (
   `id_usuario` int(11) NOT NULL,
-  `nombres` varchar(250) COLLATE utf8_spanish_ci NOT NULL,
-  `email` varchar(250) COLLATE utf8_spanish_ci NOT NULL,
-  `password_user` text COLLATE utf8_spanish_ci NOT NULL,
-  `token` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
+  `nombres` varchar(250) NOT NULL,
+  `email` varchar(250) NOT NULL,
+  `password_user` text NOT NULL,
+  `token` varchar(100) NOT NULL,
   `id_rol` int(11) NOT NULL,
   `fyh_creacion` datetime NOT NULL,
   `fyh_actualizacion` datetime NOT NULL
@@ -341,8 +344,8 @@ CREATE TABLE `tb_usuarios` (
 --
 
 INSERT INTO `tb_usuarios` (`id_usuario`, `nombres`, `email`, `password_user`, `token`, `id_rol`, `fyh_creacion`, `fyh_actualizacion`) VALUES
-(7, 'Esteban Acosta', 'acostaesteban321@gmail.com', '$2y$10$oeFDOwceEaz2uZINqSC7YeYU2aazmH6nMM.MepRPS/CFihVGy/mwO', '', 1, '2023-02-28 16:13:03', '0000-00-00 00:00:00'),
-(8, 'Nahomy', 'ejemplo@gmail.com', '$2y$10$zM8fZzU7jG6YdBgAnqNRGe8VRr1qxmlnhBvH7VfKtRRBDLkkhEGAK', '', 2, '2023-02-28 21:02:57', '0000-00-00 00:00:00');
+(7, 'Empleado', 'empleado-sigein@gmail.com', '$2y$10$7r42dFWqPOnt/PFGfofJdux/BQBhazXCvcYypqAL1UO0nTiqA.jTe', '', 2, '2023-02-28 16:13:03', '2023-06-15 14:56:04'),
+(10, 'Administrador', 'administrador-sigein@gmail.com', '$2y$10$9ayB15LOaDIlHVLwc7bf7OLKAiwNL4SyaeS7sfi43JgpJYkg/VJ0K', '', 1, '2023-06-15 11:09:50', '0000-00-00 00:00:00');
 
 --
 -- Disparadores `tb_usuarios`
@@ -450,7 +453,7 @@ ALTER TABLE `tb_ventas`
 -- AUTO_INCREMENT de la tabla `tb_almacen`
 --
 ALTER TABLE `tb_almacen`
-  MODIFY `id_producto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=115;
+  MODIFY `id_producto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=116;
 
 --
 -- AUTO_INCREMENT de la tabla `tb_carrito`
@@ -462,7 +465,7 @@ ALTER TABLE `tb_carrito`
 -- AUTO_INCREMENT de la tabla `tb_categoria`
 --
 ALTER TABLE `tb_categoria`
-  MODIFY `id_categoria` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id_categoria` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT de la tabla `tb_clientes`
@@ -492,7 +495,7 @@ ALTER TABLE `tb_roles`
 -- AUTO_INCREMENT de la tabla `tb_usuarios`
 --
 ALTER TABLE `tb_usuarios`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT de la tabla `tb_ventas`
