@@ -13,7 +13,7 @@ include('../app/controllers/categorias/listado_de_categorias.php');
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-12">
-            <h1 class="m-0"><p style=color:#00FA9A>Registro de un Nuevo Producto</h1></p>
+            <h1 class="m-0"><p style=color:#1E90FF>Registro de un Nuevo Producto</h1></p>
           </div><!-- /.col -->
 
         </div><!-- /.row -->

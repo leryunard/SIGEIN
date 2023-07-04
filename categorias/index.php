@@ -12,7 +12,7 @@ include('../app/controllers/categorias/listado_de_categorias.php');
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-12">
-            <h1 class="m-0"><p style=color:red>Listado de Categorías </p>
+            <h1 class="m-0"><p style=color:#1E90FF>Listado de Categorías </p>
             <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#modal-create">
              <i class="fa fa-plus"></i> Nueva Categoría
             </button>
@@ -73,7 +73,7 @@ include('../app/controllers/categorias/listado_de_categorias.php');
                                                 <div class="modal-dialog">
                                                       <div class="modal-content">
                                                             <div class="modal-header" style="background-color:green; color:white">
-                                                                  <h4 class="modal-title">actualizar Categoría</h4>
+                                                                  <h4 class="modal-title">Actualizar Categoría</h4>
                                                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                                   <span aria-hidden="true">&times;</span>
                                                                 </button>
@@ -92,7 +92,7 @@ include('../app/controllers/categorias/listado_de_categorias.php');
                                                         </div>
                                                         <div class="modal-footer justify-content-between">
                                                         <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-                                                          <button type="button" class="btn btn-success" id="btn_update<?php echo $id_categoria;?>">actualizar Categoría</button>
+                                                          <button type="button" class="btn btn-success" id="btn_update<?php echo $id_categoria;?>">Actualizar Categoría</button>
                                                         </div>
                                                     </div>
                                           <!-- /.modal-content -->

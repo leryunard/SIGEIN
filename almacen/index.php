@@ -12,18 +12,19 @@ include('../app/controllers/almacen/listado_de_productos.php');
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0"><p style=color:green>Listado de Productos</h1></p>
+            <h1 class="m-0"><p style=color:#1E90FF>Listado de Productos</h1></p>
           </div><!-- /.col -->
-          <div class="col-sm-6">
-                  <div class="d-flex flex-row justify-content-start">
-                  <span class="mr-2">
-                    <i class="fas fa-square text-danger"></i> POR AGOTARSE
-                  </span>
-                  <span >
-                    <i class="fas fa-square text-cyan"></i> DEMASIADO PRODUCTO
-                  </span>
+            <div class="col-sm-6" style="background-color: #f2f2f2; padding: 10px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+                <div class="d-flex flex-row justify-content-center">
+        <span class="mr-2">
+            <i class="fas fa-square text-danger"></i> Producto en riesgo de agotarse
+        </span>
+                    <span>
+            <i class="fas fa-square text-cyan"></i> Demasiado producto en almacén
+        </span>
                 </div>
-          </div>
+            </div>
+
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>
@@ -56,7 +57,6 @@ include('../app/controllers/almacen/listado_de_productos.php');
                         <th><center>Categoría</center></th>
                         <th><center>Nombre</center></th>
                         <th><center>Imagen</center></th>
-                        <th><center>Descripción</center></th>
                         <th><center>Stock</center></th>
                         <th><center>Precio Compra</center></th>
                         <th><center>Precio Venta</center></th>
@@ -75,8 +75,11 @@ include('../app/controllers/almacen/listado_de_productos.php');
                                 <td><center><?php echo $producto_dato['codigo']?></center></td>
                                 <td><center><?php echo $producto_dato['nombre_categoria']?></center></td>
                                 <td><center><?php echo $producto_dato['nombre']?></center></td>
-                                <td><img src="<?php echo $URL."/almacen/img_productos/".$producto_dato['imagen']?>" alt="" width="100px" height="80px"></td>
-                                <td><center><?php echo $producto_dato['descripcion']?></center></td>
+                                <td style="text-align: center;">
+                                    <a href="#" class="image-link" onclick="openPopup('<?php echo $URL."/almacen/img_productos/".$producto_dato['imagen']?>')">
+                                        <i class="fas fa-image fa-2x"></i>
+                                    </a>
+                                </td>
 
                                 <?php 
                                  $stock_actual = $producto_dato['stock'];
@@ -100,12 +103,13 @@ include('../app/controllers/almacen/listado_de_productos.php');
                                 <td><center><?php echo $producto_dato['fecha_ingreso']?></center></td>
                                 <td><center><?php echo $producto_dato['email']?></center></td>
                                 <td><center>
-                                  <div class="btn-group">
-                                     <a href="./show.php?id=<?php echo $id_producto;?>" id type="button" class="btn btn-info btn-sm"><i class="fa fa-eye"></i> Ver</a>
-                                     <a href="./update.php?id=<?php echo $id_producto;?>" type="button" class="btn btn-success btn-sm"><i class="fa fa-pen"> Editar</i></a>
-                                     <a href="./delete.php?id=<?php echo $id_producto;?>" type="button" class="btn btn-danger btn-sm"><i class="fa fa-trash"> Borrar</i></a>
-                                   </div>
-                          </center>
+                                        <div class="btn-group" style="width: 250px;">
+                                            <a href="./show.php?id=<?php echo $id_producto;?>" id type="button" class="btn btn-info btn-sm"><i class="fa fa-eye"></i> Ver</a>
+                                            <a href="./update.php?id=<?php echo $id_producto;?>" type="button" class="btn btn-success btn-sm"><i class="fa fa-pen"> Editar</i></a>
+                                            <a href="./delete.php?id=<?php echo $id_producto;?>" type="button" class="btn btn-danger btn-sm"><i class="fa fa-trash"> Borrar</i></a>
+                                        </div>
+
+                                    </center>
                             </td> 
                             </tr>    
                             <?php 
@@ -136,18 +140,24 @@ include('../app/controllers/almacen/listado_de_productos.php');
 <?php include('../layout/mensajes.php')?>
 <?php include('../layout/parte2.php') ?>
 <script>
+    function openPopup(imageUrl) {
+        // Abre una ventana emergente con la imagen completa
+        window.open(imageUrl, "_blank", "width=800, height=600");
+    }
+</script>
+<script>
   $(function () {
     $("#example1").DataTable({
-      "pageLength": 5,
+      "pageLength": 25,
           language: {
               "emptyTable": "No hay información",
               "decimal": "",
-              "info": "Mostrando _START_ a _END_ de _TOTAL_ Roles",
+              "info": "Mostrando _START_ a _END_ de _TOTAL_ Productos",
               "infoEmpty": "Mostrando 0 a 0 de 0 Usuarios",
               "infoFiltered": "(Filtrado de _MAX_ total Roles)",
               "infoPostFix": "",
               "thousands": ",",
-              "lengthMenu": "Mostrar _MENU_ Roles",
+              "lengthMenu": "Mostrar _MENU_ Productos",
               "loadingRecords": "Cargando...",
               "processing": "Procesando...",
               "search": "Buscador:",

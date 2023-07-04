@@ -11,7 +11,7 @@ include('../layout/parte1.php');
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-12">
-            <h1 class="m-0"><p style=color:green>Listado de usuarios</h1></p>
+            <h1 class="m-0"><p style=color:#1E90FF>Listado de usuarios</h1></p>
           </div><!-- /.col -->
 
         </div><!-- /.row -->
