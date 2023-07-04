@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="shortcut icon" href="../imagen/logo.ico">
+  <link rel="shortcut icon" href="../public/images/logo.ico">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="../public/templates/AdminLTE-3.2.0/dist/css/adminlte.min.css">
   <!--Sweet alert-->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <link rel="stylesheet" type="text/css" href="../Estilos/estiloLogin.css">
+  <link rel="stylesheet" type="text/css" href="../public/estilos/estiloLogin.css">
   
 </head>
 <body class="hold-transition login-page"  id="myBody">
@@ -40,7 +40,7 @@
     }
   ?>
   <center >
-  <img src="../imagen/logo.jpg" alt="Foto" style="width: 325px">
+  <img src="../public/images/logo.png" alt="Foto" style="width: 325px">
   </center>
   <br>
   <div class="card card-outline card-primary">
