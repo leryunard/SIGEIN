@@ -73,7 +73,7 @@
           <!-- /.col -->
           <div class="col-12">
             <hr>
-            <button type="submit" class="btn btn-primary btn-block" id="myBoton" >Ingresar</button>
+            <button type="submit" class="btn btn-primary" >Ingresar</button>
           </div>
           <!-- /.col -->
         </div>
@@ -94,14 +94,6 @@
 <!-- AdminLTE App -->
 <script src="../public/templates/AdminLTE-3.2.0/dist/js/adminlte.min.js"></script>
 
-<div class="🤚">
-	<div class="👉"></div>
-	<div class="👉"></div>
-	<div class="👉"></div>
-	<div class="👉"></div>
-	<div class="🌴"></div>		
-	<div class="👍"></div>
-</div>
 
 </body>
 </html>
