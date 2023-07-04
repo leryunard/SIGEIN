@@ -76,10 +76,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="<?php echo $URL;?>/index.php" class="brand-link">
-      <img src="<?php echo $URL;?>../public/images/logo.png" alt="Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light"> <p style= color:with><strong> INVENTARIO</strong></span> </p>
-    </a>
+      <a href="<?php echo $URL; ?>/index.php" class="brand-link">
+          <img src="<?php echo $URL; ?>../public/images/text_logo.png" alt="Logo"
+               style="opacity: .8; max-width: 92%; height: auto;">
+      </a>
 
     <!-- Sidebar -->
     <div class="sidebar">
@@ -102,7 +102,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <a href="#" class="nav-link active">
               <i class="nav-icon fas fa-users"></i>
               <p>
-                <strong> <p style=color:black> Usuarios</strong></p>
+                <strong> <p style=color:white> Usuarios</strong></p>
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -110,39 +110,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <li class="nav-item">
                 <a href="<?php echo $URL;?>/usuarios/index.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p> <strong> <p style=color:#0066CC>Listado de Usuarios</p></strong>
+                  <p> <p style=color:#FFFFFF>Listado de Usuarios</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="<?php echo $URL;?>/usuarios/create.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p style= color:red> Creación de usuarios</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-
-
-          <!--Roles navabar lado izquierdo-->
-          <li class="nav-item">
-            <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-address-card"></i>
-              <p>
-              <strong> <p style=color:black>Roles </p></strong>
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="<?php echo $URL;?>/roles/index.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p style= color:#7FFFD4>Listado de roles</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="<?php echo $URL;?>/roles/create.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p style= color:#FF3366 > Creación de rol</p>
+                  <p style= color:#FFFFFF> Creación de usuarios</p>
                 </a>
               </li>
             </ul>
@@ -154,7 +128,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <a href="#" class="nav-link active">
               <i class="nav-icon fas fa-tags"></i>
               <p>
-              <strong> <p style=color:black>Categorias</p></strong>
+              <strong> <p style=color:#FFFFFF>Categorias</p></strong>
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -162,7 +136,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <li class="nav-item">
                 <a href="<?php echo $URL;?>/categorias/index.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p style=color:#D40404> Listado de categorías</p>
+                  <p style=color:#FFFFFF> Listado de categorías</p>
                 </a>
               </li>
             </ul>
@@ -174,7 +148,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <a href="#" class="nav-link active">
               <i class="nav-icon fas fa-truck-moving"></i>
               <p>
-              <strong> <p style=color:black>Almacen</p></strong>
+              <strong> <p style=color:#FFFFFF>Inventario</p></strong>
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -182,13 +156,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <li class="nav-item">
                 <a href="<?php echo $URL;?>/almacen/index.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Listado de productos</p>
+                  <p style=color:#FFFFFF>Listado de productos</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="<?php echo $URL;?>/almacen/create.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p style=color:yellow> producto</p>
+                  <p style=color:#FFFFFF>Registrar producto</p>
                 </a>
               </li>
             </ul>
@@ -199,7 +173,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <a href="#" class="nav-link active">
               <i class="nav-icon fas fa-dollar-sign"></i> 
               <p>
-              <strong> <p style=color:black>Compras</p></strong>
+              <strong> <p style=color:#FFFFFF>Compras</p></strong>
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -207,13 +181,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <li class="nav-item">
                 <a href="<?php echo $URL;?>/compras/index.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Listado de compras</p>
+                  <p style=color:#FFFFFF>Listado de compras</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="<?php echo $URL;?>/compras/create.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p style=color:aqua> Compra</p>
+                  <p style=color:#FFFFFF>Realizar Compra</p>
                 </a>
               </li>
             </ul>
@@ -225,7 +199,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <a href="#" class="nav-link active">
               <i class="nav-icon fas fa-parachute-box"></i>
               <p>
-              <strong> <p style=color:black>Proveedores</p></strong>
+              <strong> <p style=color:#FFFFFF>Proveedores</p></strong>
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -233,7 +207,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <li class="nav-item">
                 <a href="<?php echo $URL;?>/proveedores/index.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p style=color:yellow>Listado de proveedores</p>
+                  <p style=color:#FFFFFF>Listado de proveedores</p>
                 </a>
               </li>
             </ul>
@@ -245,7 +219,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <a href="#" class="nav-link active">
               <i class="nav-icon fas fa-shopping-basket"></i> 
               <p>
-              <strong> <p style=color:black>Ventas</p></strong>
+              <strong> <p style=color:#FFFFFF>Ventas</p></strong>
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -253,13 +227,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <li class="nav-item">
                 <a href="<?php echo $URL;?>/ventas/index.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Listado de Ventas</p>
+                  <p style=color:#FFFFFF>Listado de Ventas</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="<?php echo $URL;?>/ventas/create.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p style=color:greenyellow> Venta</p>
+                  <p style=color:#FFFFFF> Venta</p>
                 </a>
               </li>
             </ul>
@@ -270,7 +244,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <a href="#" class="nav-link active">
               <i class="nav-icon fas fa-user-friends"></i> 
               <p>
-              <strong> <p style=color:black>Clientes</p></strong>
+              <strong> <p style=color:#FFFFFF>Clientes</p></strong>
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -278,17 +252,17 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <li class="nav-item">
                 <a href="<?php echo $URL;?>/clientes/index.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p style=color:pink>Listado de Clientes</p>
+                  <p style=color:#FFFFFF>Listado de Clientes</p>
                 </a>
               </li>
             </ul>
           </li>
 
-          <li class="nav-item" style="background-color:#D40404;">
+          <li class="nav-item" style="background-color:#ec3c3c;">
             <a href="<?php echo $URL;?>/app/controllers/login/cerrar_sesion.php" class="nav-link">
               <i class="nav-icon fas fa-door-closed"></i>
               <p>
-              <strong> <p style=color:black>Cerrar Sesión</p></strong>
+              <strong> <p style=color:#FFFFFF>Cerrar Sesión</p></strong>
               </p>
             </a>
           </li>
