@@ -1,6 +1,6 @@
-
-  <!-- Main Footer -->
-  <footer class="text-center text-white" style="background-color: #383c44">
+global$URL;
+<!-- Main Footer -->
+  <footer class="text-center text-white" style="background-color: #383c44; z-index: 1000 !important">
     <!-- Grid container -->
     <div class="container">
       <!-- Section: Links -->
@@ -10,7 +10,7 @@
           <!-- Grid column -->
           <div class="col-md-2">
             <h6 class="text-uppercase font-weight-bold">
-              <a href="#!" class="text-white">Sobre nosotros</a>
+              <a href="" class="text-white">Sobre nosotros</a>
             </h6>
           </div>
           <!-- Grid column -->
@@ -22,26 +22,7 @@
 
       <hr class="my-5" />
       <!-- Section: Social -->
-      <section class="text-center mb-5">
-        <a href="" class="text-white me-4">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="" class="text-white me-4">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="" class="text-white me-4">
-          <i class="fab fa-google"></i>
-        </a>
-        <a href="" class="text-white me-4">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="" class="text-white me-4">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="" class="text-white me-4">
-          <i class="fab fa-github"></i>
-        </a>
-      </section>
+
       <!-- Section: Social -->
     </div>
     <!-- Grid container -->
@@ -51,14 +32,13 @@
          class="text-center p-3"
          style="background-color: rgba(0, 0, 0, 0.2)"
          >
-      © 2020 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/"
-         >MDBootstrap.com</a
+      © 2023 Copyright:
+      <a class="text-white" href="https://www.ues.edu.sv/"
+         >Universidad de El Salvador</a
         >
     </div>
     <!-- Copyright -->
   </footer>
-</div>
 <!-- ./wrapper -->
 <!-- REQUIRED SCRIPTS -->
 
@@ -81,6 +61,3 @@
 <script src="<?php echo $URL;?>/public/templates/AdminLTE-3.2.0/plugins/datatables-buttons/js/buttons.print.min.js"></script>
 <script src="<?php echo $URL;?>/public/templates/AdminLTE-3.2.0/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
 
-
-</body>
-</html>
