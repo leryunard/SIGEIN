@@ -27,7 +27,7 @@ include('../app/controllers/usuarios/show_usuario.php');
           <div class="col-md-5">
           <div class="card card-danger">
                 <div class="card-header">
-                  <h3 class="card-title">¿Desea eliminar al usuario con ID: <?php echo $id_usuario_get ?>?</h3>
+                  <h3 class="card-title">¿Desea eliminar al usuario: <?php echo $nombres ?>?</h3>
 
                   <div class="card-tools">
                     <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>

@@ -1,10 +1,12 @@
-global$URL;
+
+
+
 <!-- Main Footer -->
-  <footer class="text-center text-white" style="background-color: #383c44; z-index: 1000 !important">
+  <footer class="text-center text-white" style="background-color: #383c44; z-index: 8000; position: relative;">
     <!-- Grid container -->
     <div class="container">
       <!-- Section: Links -->
-      <section class="mt-5">
+      <section>
         <!-- Grid row-->
         <div class="row text-center d-flex justify-content-center pt-5">
           <!-- Grid column -->
