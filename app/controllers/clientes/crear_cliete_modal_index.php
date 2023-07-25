@@ -18,7 +18,9 @@ $sql_cliente -> bindParam('fyh_creacion', $fechaHora);
 
 
 if ($sql_cliente ->execute()){
-
+    session_start();
+    $_SESSION['mensaje'] = "Cliente Agregado Correctamente";
+    $_SESSION['icono'] = "success";
    //header('Location:' .$URL. '/categorias/index.php');
    ?>
    <script>
@@ -28,7 +30,7 @@ if ($sql_cliente ->execute()){
 }else{
    
    session_start();
-   $_SESSION['mensaje'] = "Error en la compra";
+   $_SESSION['mensaje'] = "Error";
    $_SESSION['icono'] = "error";
    ?>
    <script>
