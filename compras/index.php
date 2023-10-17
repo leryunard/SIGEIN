@@ -82,51 +82,62 @@ include('../app/controllers/compras/listado_de_compras.php');
                                                                 <div class="col-md-4">
                                                                     <div class="form-group">
                                                                       <label for="">Codigo </label>
-                                                                     <input type="text" disabled class="form-control" value="<?php echo $compra_dato['codigo']?>">
+                                                                      <p><?php echo $compra_dato['codigo']?></p>
+                                                                     <input type="text" disabled class="form-control" value="<?php echo $compra_dato['codigo']?>" hidden>
                                                                  </div>
                                                                  <div class="form-group">
                                                                      <label for="">Descripción </label>
-                                                                    <input class="form-control" disabled name="" value="<?php echo $compra_dato['descripcion'];?>">
+                                                                     <p><?php echo $compra_dato['descripcion_producto'];?></p>
+                                                                    <input class="form-control" disabled name="" value="<?php echo $compra_dato['descripcion_producto'];?>" hidden>
                                                                  </div>
                                                                  <div class="form-group">
                                                                     <label for="">Stock Mínimo</label>
-                                                                    <input class="form-control" disabled value="<?php echo $compra_dato['stock_minimo'];?>">
+                                                                    <p><?php echo $compra_dato['stock_minimo'];?></p>
+                                                                    <input class="form-control" disabled value="<?php echo $compra_dato['stock_minimo'];?>" hidden>
                                                                   </div>
                                                                   <div class="form-group">
                                                                     <label for="">Precio de Compra</label>
-                                                                    <input class="form-control" disabled value="<?php echo $compra_dato['precio_compra_almacen'];?>">
+                                                                    <p><?php echo $compra_dato['precio_compra_almacen'];?></p>
+                                                                    <input class="form-control" disabled value="<?php echo $compra_dato['precio_compra_almacen'];?>" hidden>
                                                                   </div>
                                                                   <div class="form-group">
                                                                       <label for="">Categoría</label>
-                                                                      <input disabled class="form-control" value="<?php echo $compra_dato['nombre_categoria'];?>">
+                                                                      <p><?php echo $compra_dato['nombre_categoria'];?></p>
+                                                                      <input disabled class="form-control" value="<?php echo $compra_dato['nombre_categoria'];?>" hidden>
                                                                   </div>
                                                                 </div>
                                                                 <div class="col-md-4">
                                                                   <div class="form-group">
                                                                      <label for="">Nombre</label>
-                                                                     <input type="text" disabled class="form-control" value="<?php echo $compra_dato['nombre_producto']?>">
+                                                                     <p>"<?php echo $compra_dato['nombre_producto']?></p>
+                                                                     <input type="text" disabled class="form-control" value="<?php echo $compra_dato['nombre_producto']?>" hidden>
                                                                     </div>
                                                                     <div class="form-group">
                                                                     <label for="">Stock</label>
-                                                                     <input class="form-control" disabled value="<?php echo $compra_dato['stock'];?>">
+                                                                    <p><?php echo $compra_dato['stock'];?></p>
+                                                                     <input class="form-control" disabled value="<?php echo $compra_dato['stock'];?>" hidden>
                                                                      </div>
                                                                      <div class="form-group">
                                                                       <label for="">Stock Máximo</label>
-                                                                      <input class="form-control" disabled value="<?php echo $compra_dato['stock_maximo']?>">
+                                                                      <p><?php echo $compra_dato['stock_maximo']?></p>
+                                                                      <input class="form-control" disabled value="<?php echo $compra_dato['stock_maximo']?>" hidden>
                                                                      </div>
                                                                      <div class="form-group">
                                                                       <label for="">Precio de Venta</label>
-                                                                      <input disabled class="form-control" value="<?php echo $compra_dato['precio_venta']?>">
+                                                                      <p><?php echo $compra_dato['precio_venta']?></p>
+                                                                      <input disabled class="form-control" value="<?php echo $compra_dato['precio_venta']?>" hidden>
                                                                      </div>
                                                                      <div class="form-group">
                                                                       <label for="">Usuario</label>
-                                                                      <input class="form-control" disabled value="<?php echo $compra_dato['nombre_usuario_producto'];?>">
+                                                                      <p><?php echo $compra_dato['nombre_usuario_producto'];?></p>
+                                                                      <input class="form-control" disabled value="<?php echo $compra_dato['nombre_usuario_producto'];?>" hidden>
                                                                      </div>
                                                                 </div>
                                                                 <div class="col-md-4">
                                                                   <div class="form-group">
                                                                     <label for="">Fecha de Ingreso</label>
-                                                                    <input class="form-control" disabled value="<?php echo $compra_dato['fecha_ingreso'];?>">
+                                                                    <p><?php echo $compra_dato['fecha_ingreso'];?></p>
+                                                                    <input class="form-control" disabled value="<?php echo $compra_dato['fecha_ingreso'];?>" hidden>
                                                                   </div>
                                                                   <div class="form-group">
                                                                     <label for="">Imagen</label>
@@ -168,22 +179,26 @@ include('../app/controllers/compras/listado_de_compras.php');
                                                             <div class="col-md-4">
                                                               <div class="form-group">
                                                                 <label for="">Nombre Proveedor</label>
-                                                                <input type="text" disabled class="form-control" value="<?php echo $compra_dato['nombre_proveedor'];?>">
+                                                                <p><?php echo $compra_dato['nombre_proveedor'];?></p>
+                                                                <input type="text" disabled class="form-control" value="<?php echo $compra_dato['nombre_proveedor'];?>" hidden>
                                                               </div>
                                                               <div class="form-group">
                                                                 <label for="">Teléfono</label>
-                                                                <input type="text" disabled class="form-control" value="<?php echo $compra_dato['telefono_proveedor']?>">
+                                                                <p><?php echo $compra_dato['telefono_proveedor']?></p>
+                                                                <input type="text" disabled class="form-control" value="<?php echo $compra_dato['telefono_proveedor']?>" hidden>
                                                               </div>
                                                             </div>
 
                                                             <div class="col-md-4">
                                                               <div class="form-group">
                                                                 <label for="">Empresa</label>
-                                                                <input type="text" disabled class="form-control" value="<?php echo $compra_dato['empresa_proveedor']?>">
+                                                                <p><?php echo $compra_dato['empresa_proveedor']?></p>
+                                                                <input type="text" disabled class="form-control" value="<?php echo $compra_dato['empresa_proveedor']?>" hidden>
                                                               </div>
                                                               <div class="form_group">
                                                                 <label for="">Email</label>
-                                                                <input type="email" class="form-control" disabled value="<?php echo $compra_dato['email_proveedor']?>">
+                                                                <p><?php echo $compra_dato['email_proveedor']?></p>
+                                                                <input type="email" class="form-control" disabled value="<?php echo $compra_dato['email_proveedor']?>" hidden>
                                                               </div>
                                                             </div>
                                                             
@@ -197,7 +212,8 @@ include('../app/controllers/compras/listado_de_compras.php');
                                                               </div>
                                                               <div class="form-group">
                                                                 <label for="">Dirección</label>
-                                                                <textarea disabled class="form-control" rows="" cols=""><?php echo $compra_dato['direccion_proveedor']?></textarea>
+                                                                <p><?php echo $compra_dato['direccion_proveedor']?></p>
+                                                                <textarea disabled class="form-control" rows="" cols="" hidden><?php echo $compra_dato['direccion_proveedor']?></textarea>
                                                               </div>
                                                             </div>
                                                           </div>
@@ -234,20 +250,23 @@ include('../app/controllers/compras/listado_de_compras.php');
                                                             <div class="col-md-4">
                                                               <div class="form-group">
                                                                 <label for="">Nombre de Usuario</label>
-                                                                <input disabled class="form-control" value="<?php echo $compra_dato['nombre_usuario_producto']?>">
+                                                                <p><?php echo $compra_dato['nombre_usuario_producto']?></p>
+                                                                <input disabled class="form-control" value="<?php echo $compra_dato['nombre_usuario_producto']?>" hidden>
                                                               </div>
                                                             </div>    
                                                             <div class="col-md-4">
                                                               <div class="form-group">
                                                                 <label for="">Correo</label>
-                                                                <input disabled class="form-control" value="<?php echo $compra_dato['email_usuario'];?>">
+                                                                <p><?php echo $compra_dato['email_usuario'];?></p>
+                                                                <input disabled class="form-control" value="<?php echo $compra_dato['email_usuario'];?>" hidden>
                                                               </div>
                                                             </div>
 
                                                             <div class="col-md-4">
                                                               <div class="form-group">
                                                                 <label for="">Rol del Usuario</label>
-                                                                <input disabled class="form-control" value="<?php echo $compra_dato['usuario_rol'];?>">
+                                                                <p><?php echo $compra_dato['usuario_rol'];?></p>
+                                                                <input disabled class="form-control" value="<?php echo $compra_dato['usuario_rol'];?>" hidden>
                                                               </div>
                                                             </div>
 

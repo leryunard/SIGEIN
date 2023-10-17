@@ -62,13 +62,21 @@ include('../layout/parte1.php');
                             <td><center><?php echo $usuario_dato['nombres']?></center></td>
                             <td><center><?php echo $usuario_dato['email']?></center></td>
                             <td><center><?php echo $usuario_dato['rol']?></center></td>
+                            <?php
+                                if ($usuario_dato['id_rol']!= 1){ ?>
+
                             <td><center>
+
                                <div class="btn-group">
                                   <a href="./show.php?id=<?php echo $id_usuario;?>" id type="button" class="btn btn-info"><i class="fa fa-eye"></i> Ver</a>
                                   <a href="./update.php?id=<?php echo $id_usuario;?>" type="button" class="btn btn-success"><i class="fa fa-pen"> Editar</i></a>
                                   <a href="./delete.php?id=<?php echo $id_usuario;?>" type="button" class="btn btn-danger"><i class="fa fa-trash"> Borrar</i></a>
                                </div>
                           </center>
+                          
+                          <?php
+                                }
+                              ?>
                             </td> 
                           </tr>
                             <?php 
