@@ -4,7 +4,7 @@
     define('PASSWORD','');
     define('BD','sistemadeventas');
 
-    $servidor = "mysql:dbname=".BD.";host=".SERVIDOR;
+    $servidor = "mysql:dbname=".BD.";host=".SERVIDOR; 
 
     try{
         $pdo = new PDO($servidor, username: USUARIO, password: PASSWORD);
@@ -12,7 +12,7 @@
         //echo "La conexión a la base de datos fue éxitosa";
     }catch (PDOException $e){
         //print_r($e);
-        echo "Error al conectar a la base de datos";
+        echo "Error al conectar a la base de datos NUEVAMENTE";
     }
 
 
