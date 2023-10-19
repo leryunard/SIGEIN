@@ -153,6 +153,7 @@ include('../app/controllers/clientes/listado_de_cliente.php');
                     <div class="form-group">
                           <label for="">Descripción</label>
                           <input type="text" disabled class="form-control" id="descripcion_venta" value="">
+                          
                     </div>
                   </div>
                   <div class="col-md-2">
