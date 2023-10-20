@@ -182,8 +182,8 @@ include('../app/controllers/compras/mostrar_compra.php');
                                         $contador_de_id = $contador_de_id + 1;
                                       }
                                       ?>
-                                      <input type="text" value="<?php echo $codigo_producto;?>" id="codigo" class="form-control"
-                                      disabled>
+                                     <div>
+                                      <?php echo $codigo_producto;?> </div>
                                     </div>
                                 </div>
 
@@ -207,7 +207,9 @@ include('../app/controllers/compras/mostrar_compra.php');
                             <div class="col-md-4">
                                 <div class="form-group">
                                   <label for="">Usuario</label>
-                                  <input type="text" name="" id="usuario_producto" value="<?php echo $email_usuario_producto?>"  disabled class="form-control">
+                                  <div>
+                                          <?php echo $email_usuario_producto; ?>
+                                     </div>   
                                 </div>
                             </div>
                             <div class="col-md-8">
