@@ -38,7 +38,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       </li>
       <li class="nav-item d-none d-sm-inline-block">
        <table>
-       <h1><a href="#" class="nav-link">  <p style=color:black><strong> SISTEMA DE INVENTARIO LUBRICANTES Y ACCESORIOS ESPAÑA </strong> </a></p></h1>
+       <h1><a href="../index.php" class="nav-link">  <p style=color:black><strong> SISTEMA DE INVENTARIO LUBRICANTES Y ACCESORIOS ESPAÑA </strong> </a></p></h1>
        </table>
       </li>
     </ul>

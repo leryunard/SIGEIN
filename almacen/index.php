@@ -53,14 +53,11 @@ include('../app/controllers/almacen/listado_de_productos.php');
                   <tr>
                         <th><center># Pro.</center></th>
                         <th><center>Código Producto</center></th>
-                        <th><center>Categoría</center></th>
                         <th><center>Nombre</center></th>
+                        <th><center>Categoría</center></th>
                         <th><center>Imagen</center></th>
-                        <th><center>Descripción</center></th>
                         <th><center>Stock</center></th>
-                        <th><center>Precio Compra</center></th>
                         <th><center>Precio Venta</center></th>
-                        <th><center>Fecha Compra</center></th>
                         <th><center>Usuario</center></th>
                         <th><center>Acciones</center></th>
                   </tr>
@@ -73,10 +70,10 @@ include('../app/controllers/almacen/listado_de_productos.php');
                             <tr>
                                 <td><center><?php echo $contador = $contador + 1?></center></td>
                                 <td><center><?php echo $producto_dato['codigo']?></center></td>
-                                <td><center><?php echo $producto_dato['nombre_categoria']?></center></td>
                                 <td><center><?php echo $producto_dato['nombre']?></center></td>
+                                <td><center><?php echo $producto_dato['nombre_categoria']?></center></td>
                                 <td><img src="<?php echo $URL."/almacen/img_productos/".$producto_dato['imagen']?>" alt="" width="100px" height="80px"></td>
-                                <td><center><?php echo $producto_dato['descripcion']?></center></td>
+                                
 
                                 <?php 
                                  $stock_actual = $producto_dato['stock'];
@@ -95,9 +92,7 @@ include('../app/controllers/almacen/listado_de_productos.php');
                                  }
 
                                 ?>
-                                <td><center><?php echo $producto_dato['precio_compra']?></center></td>
                                 <td><center><?php echo $producto_dato['precio_venta']?></center></td>
-                                <td><center><?php echo $producto_dato['fecha_ingreso']?></center></td>
                                 <td><center><?php echo $producto_dato['email']?></center></td>
                                 <td><center>
                                   <div class="btn-group">

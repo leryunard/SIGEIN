@@ -198,34 +198,34 @@ include('../app/controllers/proveedores/listado_de_proveedores.php');
                                <div class="col-md-6">
                                   <div class="form-group">
                                     <label for="">Nombre del Proveedor</label>
-                                    <input type="text" id="nombre_proveedor<?php echo $id_proveedor;?>" value="<?php echo $nombre_proveedor;?>" class="form-control" disabled>
+                                    <p><?php echo $nombre_proveedor;?></p>
                                     <small style="color:red;display:none;" id="lbl_proveedor">*Este campo es requerido</small>
                                   </div>
                                   <div class="form-group">
                                     <label for="">Celular</label>
-                                    <input type="number" id="celular<?php echo $id_proveedor;?>" value="<?php echo $celular?>" class="form-control" disabled>
+                                    <p><?php echo $celular;?></p>
                                     <small style="color:red;display:none;" id="lbl_celular">*Este campo es requerido</small>
                                   </div>
                                   <div class="form-group">
                                     <label for="">Teléfono</label>
-                                    <input type="number" id="telefono<?php echo $telefono;?>" value="<?php echo $telefono;?>" class="form-control" disabled>
+                                    <p><?php echo $telefono;?></p>
                                     <small style="color:red;display:none;" id="lbl_telefono">*Este campo es requerido</small>
                                   </div>
                                </div>
                                <div class="col-md-6">
                                   <div class="form-group">
                                     <label for="">Empresa</label>
-                                    <input type="text" id="empresa<?php echo $id_proveedor;?>" value="<?php echo $empresa;?>" class="form-control" disabled>
+                                    <p><?php echo $empresa;?></p>
                                     <small style="color:red;display:none;" id="lbl_empresa">*Este campo es requerido</small>
                                   </div>
                                   <div class="form-group">
                                     <label for="">Email</label>
-                                    <input type="email" id="email_proveedor<?php echo $id_proveedor?>" value="<?php echo $email_proveedor;?>" class="form-control" disabled>
+                                    <p><?php echo $email_proveedor;?></p>
                                     <small style="color:red;display:none;" id="lbl_email">*Este campo es requerido</small>
                                   </div>
                                   <div class="form-group">
                                     <label for="">Dirección</label>
-                                    <textarea rows="" id="direccion<?php echo $direccion;?>" rows="3" cols="30" disabled class="form-control"><?php echo $direccion;?></textarea>
+                                    <p><?php echo $direccion;?></p>
                                     <small style="color:red;display:none;" id="lbl_direccion">*Este campo es requerido</small>
                                   </div>
                                </div>

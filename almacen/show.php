@@ -65,25 +65,29 @@ include('../app/controllers/almacen/show_productos.php');
                                       foreach ($productos_datos as $producto_dato){
                                         $contador_de_id = $contador_de_id + 1;
                                       }
-                                      ?>
-                                      <input type="text" id="" class="form-control" placeholder="Código-Producto" 
-                                      value="<?php echo $codigo?>" disabled>
+                                      ?> 
+                                                                          
+                                      
+                                      <h6><?php echo $codigo?></h6>
+                              
+
                                     </div>
                                 </div>
 
                                 <div class="col-md-4">
                                     <div class="form-group">
                                     <label for="">Categoría:</label>
-                                        <div style="display:flex;">
-                                            <input type="text" class="form-control" disabled value="<?php echo $categoria_nombre?>">
+                                        <div style="display:flex;">                                           
+                                            <h6 > <?php echo $categoria_nombre?></h6>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                      <label for="">Nombre Producto:</label>
-                                      <input type="text" name="nombre" value="<?php echo $nombre?>" class="form-control"  placeholder="Nombre-Producto" disabled>
+                                      <label for="">Nombre Producto:</label>                                   
+                                      <h6><?php echo $nombre?></h6>
+                                  
                                     </div>
                                 </div>
                              </div>
@@ -91,13 +95,15 @@ include('../app/controllers/almacen/show_productos.php');
                             <div class="col-md-4">
                                 <div class="form-group">
                                   <label for="">Usuario</label>
-                                  <input type="text" name="" id="" value="<?php echo $email;?>" disabled class="form-control">
+                                  
+                                  <h6><?php echo $email;?></h6>
                                 </div>
                             </div>
                             <div class="col-md-8">
                                 <div class="form-group">
                                   <label for="">Descripción Producto</label>
-                                  <textarea type="text" name="descripcion" disabled cols="30" rows="2" class="form-control"><?php echo $descripcion?></textarea>
+                                  
+                                  <center><p><?php echo $descripcion?></p></center>
                                 </div>
                             </div>
                           </div>
@@ -105,37 +111,38 @@ include('../app/controllers/almacen/show_productos.php');
                                 <div class="col-md-2">
                                     <div class="form-group">
                                       <label for="">Stock:</label>
-                                      <input type="number" name="stock" id="" class="form-control" disabled value="<?php echo $stock?>" >
+                                      <h6><?php echo $stock?></h6>
                                     </div>
                                 </div>
                                 <div class="col-md-2">
                                     <div class="form-group">
                                       <label for="">Stock Mínimo:</label>
-                                      <input type="number" name="stock_minimo" id="" class="form-control" disabled value="<?php echo $stock_minimo;?>">
+                                      <h6><?php echo $stock_minimo;?></h6>
                                     </div>
                                 </div>
                                 <div class="col-md-2">
                                     <div class="form-group">
                                       <label for="">Stock Máximo:</label>
-                                      <input type="number" name="stock_maximo" id="" class="form-control" disabled value="<?php echo $stock_maximo?>">
+                                      <h6><?php echo $stock_maximo;?></h6>
                                     </div>
                                 </div>
                                 <div class="col-md-2">
                                     <div class="form-group">
                                       <label for="">Precio Compra:</label>
-                                      <input type="number" name="precio_compra" id="" class="form-control" disabled value="<?php echo $precio_compra?>">
+                                      <h6><?php echo $precio_compra;?></h6>
                                     </div>
                                 </div>
                                 <div class="col-md-2">
                                     <div class="form-group">
                                       <label for="">Precio Venta:</label>
-                                      <input type="number" name="precio_venta" id="" class="form-control" disabled value="<?php echo $precio_venta?>">
+                                      <h6><?php echo $precio_venta;?></h6>
                                     </div>
                                 </div>
                                 <div class="col-md-2">
                                     <div class="form-group">
                                       <label for="">Fecha de Ingreso:</label>
-                                      <input type="date" name="fecha_ingreso" id="" class="form-control" disabled value="<?php echo $fecha_ingreso?>">
+                                      
+                                      <h6><?php echo $fecha_ingreso;?></h6>
                                     </div>
                                 </div>
                             </div>
@@ -143,7 +150,7 @@ include('../app/controllers/almacen/show_productos.php');
                             <div class="col-md-3">
                                     <div class="form-group">
                                       <label for="">Imagen del Producto</label> 
-                                        <img src="<?php echo $URL.'/almacen/img_productos/'.$imagen;?>" alt="" width="90%" disabled>
+                                        <img src="<?php echo $URL.'/almacen/img_productos/'.$imagen;?>" alt="" width="90%" height="90%" disabled>
                                       <hr>
                                       <output id="list"></output>
                                       <script>
