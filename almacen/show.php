@@ -66,8 +66,11 @@ include('../app/controllers/almacen/show_productos.php');
                                         $contador_de_id = $contador_de_id + 1;
                                       }
                                       ?>
-                                      <input type="text" id="" class="form-control" placeholder="Código-Producto" 
-                                      value="<?php echo $codigo?>" disabled>
+
+
+                                      <h6><?php echo $codigo?></h6>
+
+
                                     </div>
                                 </div>
 
@@ -75,7 +78,7 @@ include('../app/controllers/almacen/show_productos.php');
                                     <div class="form-group">
                                     <label for="">Categoría:</label>
                                         <div style="display:flex;">
-                                            <input type="text" class="form-control" disabled value="<?php echo $categoria_nombre?>">
+                                            <h6 > <?php echo $categoria_nombre?></h6>
                                         </div>
                                     </div>
                                 </div>
@@ -83,7 +86,8 @@ include('../app/controllers/almacen/show_productos.php');
                                 <div class="col-md-4">
                                     <div class="form-group">
                                       <label for="">Nombre Producto:</label>
-                                      <input type="text" name="nombre" value="<?php echo $nombre?>" class="form-control"  placeholder="Nombre-Producto" disabled>
+                                      <h6><?php echo $nombre?></h6>
+
                                     </div>
                                 </div>
                              </div>
@@ -91,64 +95,62 @@ include('../app/controllers/almacen/show_productos.php');
                             <div class="col-md-4">
                                 <div class="form-group">
                                   <label for="">Usuario</label>
-                                  <input type="text" name="" id="" value="<?php echo $email;?>" disabled class="form-control">
+
+                                  <h6><?php echo $email;?></h6>
                                 </div>
                             </div>
                             <div class="col-md-8">
-                               <div class="form-group">
-                                 <label for="">Descripción Producto</label>
-                                        <textarea name="descripcion" disabled rows="6" class="form-control" style="text-align: justify; margin-bottom: 20px;"><?php echo $descripcion?></textarea>
-                                     </div>
-                               </div>
+                                <div class="form-group">
+                                  <label for="">Descripción Producto</label>
 
+                                  <center><p><?php echo $descripcion?></p></center>
+                                </div>
+                            </div>
                           </div>
-                          <div class="row">
-                              <div class="col-md-4">
-                              <div class="form-group">
-                              <label for="">Stock:</label>
-                              <input type="number" name="stock" id="" class="form-control" disabled value="<?php echo $stock ?>" style="background-color: #f5f5f5; border: none; box-shadow: none;">
-                              </div>
-                              </div>
-                              <div class="col-md-4">
-                              <div class="form-group">
-                              <label for="">Stock Mínimo:</label>
-                              <input type="number" name="stock_minimo" id="" class="form-control" disabled value="<?php echo $stock_minimo ?>" style="background-color: #f5f5f5; border: none; box-shadow: none;">
-                              </div>
-                              </div>
-                              <div class="col-md-4">
-                              <div class="form-group">
-                              <label for="">Stock Máximo:</label>
-                              <input type="number" name="stock_maximo" id="" class="form-control" disabled value="<?php echo $stock_maximo ?>" style="background-color: #f5f5f5; border: none; box-shadow: none;">
-                              </div>
-                              </div>
-                              </div>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                      <label for="">Stock:</label>
+                                      <h6><?php echo $stock?></h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                      <label for="">Stock Mínimo:</label>
+                                      <h6><?php echo $stock_minimo;?></h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                      <label for="">Stock Máximo:</label>
+                                      <h6><?php echo $stock_maximo;?></h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                      <label for="">Precio Compra:</label>
+                                      <h6><?php echo $precio_compra;?></h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                      <label for="">Precio Venta:</label>
+                                      <h6><?php echo $precio_venta;?></h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                      <label for="">Fecha de Ingreso:</label>
 
-                              <div class="row">
-                              <div class="col-md-4">
-                              <div class="form-group">
-                              <label for="">Precio Compra:</label>
-                              <input type="number" name="precio_compra" id="" class="form-control" disabled value="<?php echo $precio_compra ?>" style="background-color: #f5f5f5; border: none; box-shadow: none;">
-                              </div>
-                              </div>
-                              <div class="col-md-4">
-                              <div class="form-group">
-                              <label for="">Precio Venta:</label>
-                              <input type="number" name="precio_venta" id="" class="form-control" disabled value="<?php echo $precio_venta ?>" style="background-color: #f5f5f5; border: none; box-shadow: none;">
-                              </div>
-                              </div>
-                              <div class="col-md-4">
-                              <div class="form-group">
-                              <label for="">Fecha de Ingreso:</label>
-                              <input type="date" name="fecha_ingreso" id="" class="form-control" disabled value="<?php echo $fecha_ingreso ?>" style="background-color: #f5f5f5; border: none; box-shadow: none;">
-                              </div>
-                              </div>
-                              </div>
-
+                                      <h6><?php echo $fecha_ingreso;?></h6>
+                                    </div>
+                                </div>
+                            </div>
                           </div>
                             <div class="col-md-3">
                                     <div class="form-group">
                                       <label for="">Imagen del Producto</label> 
-                                        <img src="<?php echo $URL.'/almacen/img_productos/'.$imagen;?>" alt="" width="90%" disabled>
+                                        <img src="<?php echo $URL.'/almacen/img_productos/'.$imagen;?>" alt="" width="90%" height="90%" disabled>
                                       <hr>
                                       <output id="list"></output>
                                       <script>

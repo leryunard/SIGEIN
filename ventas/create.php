@@ -76,7 +76,6 @@ include('../app/controllers/clientes/listado_de_cliente.php');
                         <th><center>Categoría</center></th>
                         <th><center>Nombre</center></th>
                         <th><center>Imagen</center></th>
-                        <th><center>Descripción</center></th>
                         <th><center>Stock</center></th>
                         <th><center>Precio Compra</center></th>
                         <th><center>Precio Venta</center></th>
@@ -105,8 +104,6 @@ include('../app/controllers/clientes/listado_de_cliente.php');
                                   var id_producto = "<?php echo $id_producto?>"
                                   $('#id_producto_venta').val(id_producto);
 
-                                  var detalle = "<?php echo $producto_dato['descripcion']?>"
-                                  $('#descripcion_venta').val(detalle)
                                   //$('#modal-buscar-producto').modal('toggle');
 
                                   var precio_unitario = "<?php echo $producto_dato['precio_venta']?>"
@@ -124,7 +121,6 @@ include('../app/controllers/clientes/listado_de_cliente.php');
                                 <td><center><?php echo $producto_dato['nombre_categoria']?></center></td>
                                 <td><center><?php echo $producto_dato['nombre']?></center></td>
                                 <td><img src="<?php echo $URL."/almacen/img_productos/".$producto_dato['imagen']?>" alt="" width="100px" height="80px"></td>
-                                <td><center><?php echo $producto_dato['descripcion']?></center></td>
                                 <td><center>
                                   <?php echo $producto_dato['stock']?>
                                  </center>
@@ -425,7 +421,7 @@ include('../app/controllers/clientes/listado_de_cliente.php');
                     <div class="col-md-3">
                       <div class="form-group">
                           <label for="">Nombre del Cliente</label>
-                          <input type="" disabled id="nombre_cliente" value="" class="form-control">
+                          <input type="text" disabled id="nombre_cliente" value="" class="form-control">
                           
                       </div>
                       <input type="" name="" id="cliente_seleccionado" hidden>
