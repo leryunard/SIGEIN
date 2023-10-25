@@ -123,15 +123,15 @@ include('../app/controllers/compras/mostrar_compra.php');
                                     <div class="form-group">
                                     <label for="">Categoría:</label>
                                         <div style="display:flex;">
-                                            <input type="text" class="form-control" value="<?php echo $categoria_producto;?>"  disabled id="categoria">
+                                            <?php echo $categoria_producto;?>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                      <label for="">Nombre Producto:</label>
-                                      <input type="text" class="form-control" name="nombre" id="nombre_producto" value=<?php echo $nombre_producto;?>  disabled>
+                                      <label for="">Nombre Producto:</label><br>
+                                     <?php echo $nombre_producto;?> 
                                     </div>
                                 </div>
                              </div>
@@ -145,47 +145,47 @@ include('../app/controllers/compras/mostrar_compra.php');
                                 </div>
                             </div>
                             <div class="col-md-8">
-                                <div class="form-group">
-                                  <label for="">Descripción Producto</label>
-                                  <textarea type="text" id="descripcion" disabled cols="30" rows="2" class="form-control"><?php echo $descripcion_producto;?></textarea>
+                                  <div class="form-group">
+                                    <label for="">Descripción Producto</label><br>
+                                    <textarea id="descripcion" readonly style="border: none; background: transparent;"rows="7" cols="45"><?php echo $descripcion_producto; ?></textarea>
+                                  </div>
                                 </div>
-                            </div>
                           </div>
                             <div class="row">
                                 <div class="col-md-2">
                                     <div class="form-group">
                                       <label for="">Stock:</label>
-                                      <input style="background-color: yellowgreen;" value="<?php echo $stock_producto;?>" type="number" name="stock"  class="form-control" disabled id="stock" >
+                                      <?php echo $stock_producto;?>
                                     </div>
                                 </div>
                                 <div class="col-md-2">
                                     <div class="form-group">
                                       <label for="">Stock Mínimo:</label>
-                                      <input type="number" name="stock_minimo" value="<?php echo $stock_minimo_producto;?>"  class="form-control" disabled id="stock_minimo">
+                                     <?php echo $stock_minimo_producto;?>
                                     </div>
                                 </div>
                                 <div class="col-md-2">
                                     <div class="form-group">
                                       <label for="">Stock Máximo:</label>
-                                      <input type="number" name="stock_maximo" value="<?php echo $stock_maximo_producto?>" id="stock_maximo" class="form-control" disabled >
+                                      <?php echo $stock_maximo_producto?>
                                     </div>
                                 </div>
                                 <div class="col-md-2">
                                     <div class="form-group">
                                       <label for="">Precio Compra:</label>
-                                      <input type="number" name="precio_compra" value="<?php echo $precio_compra_producto_almacen;?>" id="precio_compra" class="form-control" disabled>
+                                      <?php echo $precio_compra_producto_almacen;?>
                                     </div>
                                 </div>
                                 <div class="col-md-2">
                                     <div class="form-group">
                                       <label for="">Precio Venta:</label>
-                                      <input type="number" name="precio_venta" value="<?php echo $precio_venta_producto_almacen;?>" id="precio_venta" class="form-control" disabled >
+                                      "<?php echo $precio_venta_producto_almacen;?>
                                     </div>
                                 </div>
                                 <div class="col-md-2">
                                     <div class="form-group">
                                       <label for="">F Ingreso:</label>
-                                      <input name="fecha_ingreso" id="fecha_ingreso" value="<?php echo $fecha_ingreso_almacen;?>" class="form-control" disabled>
+                                     <?php echo $fecha_ingreso_almacen;?>
                                     </div>
                                 </div>
                             </div>
@@ -245,36 +245,36 @@ include('../app/controllers/compras/mostrar_compra.php');
                 <div class="row">
                                <div class="col-md-4">
                                   <div class="form-group">
-                                    <label for="">Nombre del Proveedor</label>
-                                    <input type="text" id="nombre_proveedor" value="<?= $nombre_proveedor?>"  class="form-control" disabled>
+                                    <label for="">Nombre del Proveedor</label><br>
+                                   <?= $nombre_proveedor?>
                   
                                   </div>
                                   <input id="id_proveedor" name="" hidden>
                                   <div class="form-group">
-                                    <label for="">Celular</label>
-                                    <input type="number" id="celular_proveedor" value="<?=$celular_proveedor;?>" class="form-control" disabled>
+                                    <label for="">Celular</label><br>
+                                    <?=$celular_proveedor;?>
                                   </div>
 
                                </div>
                                <div class="col-md-4">
                                   <div class="form-group">
-                                    <label for="">Empresa</label>
-                                    <input type="text" id="empresa" value="<?=$empresa_proveedor;?>" class="form-control" disabled>
+                                    <label for="">Empresa</label><br>
+                                    <?=$empresa_proveedor;?>
                                   </div>
                                   <div class="form-group">
-                                    <label for="">Email</label>
-                                    <input type="email" id="email_proveedor" value = "<?=$email_proveedor;?>" class="form-control" disabled>
+                                    <label for="">Email</label><br>
+                                    <?=$email_proveedor;?>
                                   </div>
 
                                </div>
                                <div class="col-md-4">
                                <div class="form-group">
-                                    <label for="">Teléfono</label>
-                                    <input type="number" id="telefono_proveedor" value="<?=$telefono_proveedor;?>"  class="form-control" disabled>
+                                    <label for="">Teléfono</label><br>
+                                    <?=$telefono_proveedor;?>
                                   </div>
-                               <div class="form-group">
-                                    <label for="">Dirección</label>
-                                    <textarea rows="" id="direccion" rows="3" cols="30" disabled class="form-control"><?php echo $direccion_proveedor;?></textarea>
+                                  <div class="form-group">
+                                    <label for="">Dirección</label><br>
+                                    <textarea id="descripcion" readonly style="border: none; background: transparent;"rows="2" cols="25"><?php echo $direccion_proveedor;?></textarea>
                                   </div>
                                </div>
                                
@@ -307,7 +307,7 @@ include('../app/controllers/compras/mostrar_compra.php');
               <div class="card-body">
 
             <div class="row">
-              <div class="col-md-12">
+              <div class="col-md-12 text-center">
                   <div class="form-group">
                     <?php 
                     $contador_compra = 1;
@@ -315,35 +315,35 @@ include('../app/controllers/compras/mostrar_compra.php');
                       $contador_compra = $contador_compra + 1;
                     }
                     ?>
-                      <label for="">Número de Compra</label>
-                      <input type="text" class="form-control" value="<?php echo $numero_de_compra?>" style="text-align: center;" disabled>
+                      <label for="">Número de Compra</label><br>
+                     <?php echo $numero_de_compra?>
                     </div>
                </div>
 
-               <div class="col-md-12">
+               <div class="col-md-12 text-center">
                   <div class="form-group">
-                    <label for="">Fecha de Compra</label>
-                    <input  disabled value="<?php echo $fecha_de_compra;?>"  id="fecha_compra" class="form-control">
+                    <label for="">Fecha de Compra</label><br>
+                    <?php echo $fecha_de_compra;?>
                   </div>
                 </div>
 
-                <div class="col-md-12">
+                <div class="col-md-12 text-center">
                   <div class="form-group">
-                    <label for="">Comprobante de la compra</label>
-                    <input type="text" value="<?=$comprobante_compra;?>" disabled class="form-control" id="comprobante_compra" >
+                    <label for="">Comprobante de la compra</label><br>
+                    <?=$comprobante_compra;?>
                   </div>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12 text-center">
                   <div class="form-group">
-                    <label for="">Precio Compra</label>
-                    <input id="compra_precio" disabled value="<?php echo $precio_compra;?>" type="number" class="form-control">
+                    <label for="">Precio Compra</label><br>
+                    <?php echo $precio_compra;?>
                   </div>                  
                 </div>
               
-                <div class="col-md-12">
+                <div class="col-md-12 text-center">
                   <div class="form-group">
-                    <label for="">Cantidad de la compra</label>
-                    <input type="number" style="text-align: center;" value="<?=$cantidad_compra?>" disabled id="cantidad_compra" class="form-control" >
+                    <label for="">Cantidad de la compra</label><br>
+                    <?=$cantidad_compra?>
                   </div>
                   <script>
                     $('#cantidad_compra').keyup(function () {
@@ -358,10 +358,10 @@ include('../app/controllers/compras/mostrar_compra.php');
                   </script>
                 </div>
 
-                <div class="col-md-12">
+                <div class="col-md-12 text-center">
                   <div class="form-group">
-                    <label for="">Usuario</label>
-                    <input type="text" class="form-control" value="<?php echo $usuario_compra?>" disabled>
+                    <label for="">Usuario</label><br>
+                    <?php echo $usuario_compra?>
                   </div>
                   <hr>
                 </div>
