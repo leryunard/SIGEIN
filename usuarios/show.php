@@ -27,7 +27,7 @@ include('../app/controllers/usuarios/show_usuario.php');
           <div class="col-md-5">
           <div class="card card-primary">
                 <div class="card-header">
-                  <h3 class="card-title">Información del usuario ID: <?php echo $id_usuario_get ?></h3>
+                  <h3 class="card-title">Información del usuario : <?php echo $nombres ?></h3>
 
                   <div class="card-tools">
                     <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
@@ -41,18 +41,19 @@ include('../app/controllers/usuarios/show_usuario.php');
                       <div class ="col-md-12">
                             <div class="form-group">
                               <label for="nombre">Nombre: </label>
-                              <div>
-                              <?php echo $nombres;?></div>
+                              <p><?php echo $nombres;?></p>
+                              <input type="text" name="nombres" disabled class="form-control" value="<?php echo $nombres;?>" hidden>
                             </div>
                             <div class="form-group">
                               <label for="email">Correo Electronico: </label>
-                            <div>
-                              <?php echo $email;?></div>
+                              <p><?php echo $email;?></p>
+                              <input type="email" class="form-control" disabled name="email" value="<?php echo $email;?>" hidden>
                             </div>
                             <div class="form-group">
                               <label for="email">Rol del Usuario: </label>
-                              <div>
-                              <?php echo $rol;?></div>
+                              <p><?php echo $rol ?></p>
+
+                              <input type="text" class="form-control" disabled name="rol" value="<?php echo $rol;?>" hidden>
                             </div>
                             <hr>
                             <div class="form-group">

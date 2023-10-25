@@ -198,34 +198,42 @@ include('../app/controllers/proveedores/listado_de_proveedores.php');
                                <div class="col-md-6">
                                   <div class="form-group">
                                     <label for="">Nombre del Proveedor</label>
-                                    <p><?php echo $nombre_proveedor;?></p>
+                                    <p id="nombre_proveedor<?php echo $id_proveedor;?>"><?php echo  $nombre_proveedor ?></p>
+
+                                    <input type="text" id="nombre_proveedor<?php echo $id_proveedor;?>" value="<?php echo $nombre_proveedor;?>" class="form-control" hidden>
                                     <small style="color:red;display:none;" id="lbl_proveedor">*Este campo es requerido</small>
                                   </div>
                                   <div class="form-group">
                                     <label for="">Celular</label>
-                                    <p><?php echo $celular;?></p>
+                                    <p  id="celular<?php echo $id_proveedor;?>"><?php echo $celular  ?></p>
+
+                                    <input type="number" id="celular<?php echo $id_proveedor;?>" value="<?php echo $celular?>" class="form-control" hidden>
                                     <small style="color:red;display:none;" id="lbl_celular">*Este campo es requerido</small>
                                   </div>
                                   <div class="form-group">
                                     <label for="">Teléfono</label>
-                                    <p><?php echo $telefono;?></p>
+                                    <p id="telefono<?php echo $telefono;?>"><?php echo $telefono?></p>
+                                    <input type="number" id="telefono<?php echo $telefono;?>" value="<?php echo $telefono;?>" class="form-control" hidden>
                                     <small style="color:red;display:none;" id="lbl_telefono">*Este campo es requerido</small>
                                   </div>
                                </div>
                                <div class="col-md-6">
                                   <div class="form-group">
                                     <label for="">Empresa</label>
-                                    <p><?php echo $empresa;?></p>
+                                    <p  id="empresa<?php echo $id_proveedor;?>"><?php echo $empresa?></p>
+                                    <input type="text" id="empresa<?php echo $id_proveedor;?>" value="<?php echo $empresa;?>" class="form-control" hidden>
                                     <small style="color:red;display:none;" id="lbl_empresa">*Este campo es requerido</small>
                                   </div>
                                   <div class="form-group">
                                     <label for="">Email</label>
-                                    <p><?php echo $email_proveedor;?></p>
+                                    <p id="email_proveedor<?php echo $id_proveedor?>"><?php echo $email_proveedor?></p>
+                                    <input type="email" id="email_proveedor<?php echo $id_proveedor?>" value="<?php echo $email_proveedor;?>" class="form-control" hidden>
                                     <small style="color:red;display:none;" id="lbl_email">*Este campo es requerido</small>
                                   </div>
                                   <div class="form-group">
                                     <label for="">Dirección</label>
-                                    <p><?php echo $direccion;?></p>
+                                    <p id="direccion<?php echo $direccion;?>"><?php echo $direccion ?></p>
+                                    <textarea rows="" id="direccion<?php echo $direccion;?>" rows="3" cols="30" hidden class="form-control"><?php echo $direccion;?></textarea>
                                     <small style="color:red;display:none;" id="lbl_direccion">*Este campo es requerido</small>
                                   </div>
                                </div>

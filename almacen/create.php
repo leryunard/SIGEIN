@@ -66,8 +66,7 @@ include('../app/controllers/categorias/listado_de_categorias.php');
                                         $contador_de_id = $contador_de_id + 1;
                                       }
                                       ?>
-                                      <input type="text" id="" class="form-control" placeholder="Código-Producto" 
-                                      value="<?php echo "P-". ceros($contador_de_id)?>" disabled>
+                                      <h3><?php echo "P-". ceros($contador_de_id)?></h3>
                                       <input type="text" name="codigo" value="<?php echo "P-". ceros($contador_de_id)?>" hidden>
                                     </div>
                                 </div>
@@ -100,7 +99,7 @@ include('../app/controllers/categorias/listado_de_categorias.php');
                             <div class="col-md-4">
                                 <div class="form-group">
                                   <label for="">Usuario</label>
-                                  <input type="text" name="" id="" value="<?php echo $email_usuario;?>" disabled class="form-control">
+                                  <h5><?php echo $email_usuario ?></h5>
                                   <input name="id_usuario" value="<?php echo $id_usuario_sesion;?>" hidden>
                                 </div>
                             </div>

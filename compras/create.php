@@ -183,7 +183,7 @@ include('../app/controllers/compras/listado_de_compras.php');
                                       }
                                       ?>
                                       <input type="text" id="codigo" class="form-control"
-                                      disabled>
+                                      placeholder="codigo" require>
                                     </div>
                                 </div>
 
@@ -191,7 +191,7 @@ include('../app/controllers/compras/listado_de_compras.php');
                                     <div class="form-group">
                                     <label for="">Categoría:</label>
                                         <div style="display:flex;">
-                                            <input type="text" class="form-control" disabled id="categoria">
+                                            <input type="text" class="form-control" id="categoria" placeholder="categoria" require>
                                         </div>
                                     </div>
                                 </div>
@@ -199,7 +199,7 @@ include('../app/controllers/compras/listado_de_compras.php');
                                 <div class="col-md-4">
                                     <div class="form-group">
                                       <label for="">Nombre Producto:</label>
-                                      <input type="text" name="nombre" id="nombre_producto" class="form-control"  disabled>
+                                      <input type="text" name="nombre" id="nombre_producto" class="form-control" placeholder="nombre del producto"require>
                                     </div>
                                 </div>
                              </div>
@@ -207,13 +207,13 @@ include('../app/controllers/compras/listado_de_compras.php');
                             <div class="col-md-4">
                                 <div class="form-group">
                                   <label for="">Usuario</label>
-                                  <input type="text" name="" id="usuario_producto"  disabled class="form-control">
+                                  <input type="text" name="" id="usuario_producto" class="form-control" placeholder="usuario" require>
                                 </div>
                             </div>
                             <div class="col-md-8">
                                 <div class="form-group">
                                   <label for="">Descripción Producto</label>
-                                  <textarea type="text" id="descripcion" disabled cols="30" rows="2" class="form-control"></textarea>
+                                  <textarea type="text" id="descripcion"  cols="30" rows="2" class="form-control"></textarea>
                                 </div>
                             </div>
                           </div>
@@ -221,37 +221,37 @@ include('../app/controllers/compras/listado_de_compras.php');
                                 <div class="col-md-2">
                                     <div class="form-group">
                                       <label for="">Stock:</label>
-                                      <input style="background-color: yellowgreen;" type="number" name="stock"  class="form-control" disabled id="stock" >
+                                      <input style="background-color: yellowgreen;" type="number" name="stock"  class="form-control"  id="stock" >
                                     </div>
                                 </div>
                                 <div class="col-md-2">
                                     <div class="form-group">
                                       <label for="">Stock Mínimo:</label>
-                                      <input type="number" name="stock_minimo"  class="form-control" disabled id="stock_minimo">
+                                      <input type="number" name="stock_minimo"  class="form-control"  id="stock_minimo">
                                     </div>
                                 </div>
                                 <div class="col-md-2">
                                     <div class="form-group">
                                       <label for="">Stock Máximo:</label>
-                                      <input type="number" name="stock_maximo" id="stock_maximo" class="form-control" disabled >
+                                      <input type="number" name="stock_maximo" id="stock_maximo" class="form-control"  >
                                     </div>
                                 </div>
                                 <div class="col-md-2">
                                     <div class="form-group">
                                       <label for="">Precio Compra:</label>
-                                      <input type="number" name="precio_compra" id="precio_compra" class="form-control" disabled>
+                                      <input type="number" name="precio_compra" id="precio_compra" class="form-control" >
                                     </div>
                                 </div>
                                 <div class="col-md-2">
                                     <div class="form-group">
                                       <label for="">Precio Venta:</label>
-                                      <input type="number" name="precio_venta" id="precio_venta" class="form-control" disabled >
+                                      <input type="number" name="precio_venta" id="precio_venta" class="form-control" >
                                     </div>
                                 </div>
                                 <div class="col-md-2">
                                     <div class="form-group">
                                       <label for="">F Ingreso:</label>
-                                      <input name="fecha_ingreso" id="fecha_ingreso" class="form-control" disabled>
+                                      <input name="fecha_ingreso" id="fecha_ingreso" class="form-control" >
                                     </div>
                                 </div>
                             </div>
@@ -259,7 +259,7 @@ include('../app/controllers/compras/listado_de_compras.php');
                             <div class="col-md-3">
                                     <div class="form-group">
                                       <label for="">Imagen del Producto</label> 
-                                        <img src="<?php echo $URL.'/almacen/img_productos/'.$imagen;?>" id="imagen_producto" alt="" width="90%" disabled>
+                                        <img src="<?php echo $URL.'/almacen/img_productos/'.$imagen;?>" id="imagen_producto" alt="" width="90%" >
                                       <hr>
                                       <output id="list"></output>
                                       <script>
@@ -391,35 +391,35 @@ include('../app/controllers/compras/listado_de_compras.php');
                                <div class="col-md-4">
                                   <div class="form-group">
                                     <label for="">Nombre del Proveedor</label>
-                                    <input type="text" id="nombre_proveedor"  class="form-control" disabled>
+                                    <input type="text" id="nombre_proveedor"  class="form-control" placeholder="nombre proveedor"require>
                   
                                   </div>
                                   <input id="id_proveedor" name="" hidden>
                                   <div class="form-group">
                                     <label for="">Celular</label>
-                                    <input type="number" id="celular_proveedor" class="form-control" disabled>
+                                    <input type="number" id="celular_proveedor" class="form-control" placeholder="celular proveedor"require>
                                   </div>
 
                                </div>
                                <div class="col-md-4">
                                   <div class="form-group">
                                     <label for="">Empresa</label>
-                                    <input type="text" id="empresa" class="form-control" disabled>
+                                    <input type="text" id="empresa" class="form-control" placeholder="empresa"require>
                                   </div>
                                   <div class="form-group">
                                     <label for="">Email</label>
-                                    <input type="email" id="email_proveedor" class="form-control" disabled>
+                                    <input type="email" id="email_proveedor" class="form-control" placeholder="correo de proveedor" require>
                                   </div>
 
                                </div>
                                <div class="col-md-4">
                                <div class="form-group">
                                     <label for="">Teléfono</label>
-                                    <input type="number" id="telefono_proveedor"  class="form-control" disabled>
+                                    <input type="number" id="telefono_proveedor"  class="form-control" placeholder="telefono proveedor" require>
                                   </div>
                                <div class="form-group">
                                     <label for="">Dirección</label>
-                                    <textarea rows="" id="direccion" rows="3" cols="30" disabled class="form-control"></textarea>
+                                    <textarea rows="" id="direccion" rows="3" cols="30" class="form-control"></textarea>
                                   </div>
                                </div>
                                
@@ -461,7 +461,7 @@ include('../app/controllers/compras/listado_de_compras.php');
                     }
                     ?>
                       <label for="">Número de Compra</label>
-                      <input type="text" class="form-control" value="<?php echo $contador_compra?>" style="text-align: center;" disabled>
+                      <input type="text" class="form-control" value="<?php echo $contador_compra?>" style="text-align: center;" >
                       <input type="text" class="form-control" id="numero_compra" value="<?php echo $contador_compra?>" style="text-align: center;" hidden>
                     </div>
                </div>
@@ -488,14 +488,14 @@ include('../app/controllers/compras/listado_de_compras.php');
                 <div class="col-md-6">
                   <div class="form-group">
                     <label for="">Stock actual</label>
-                    <input style="background-color: yellowgreen; text-align:center;" type="text" class="form-control" id="stock_actual" disabled>
+                    <input style="background-color: yellowgreen; text-align:center;" type="text" class="form-control" id="stock_actual" >
                   </div>                  
                 </div>
 
                 <div class="col-md-6">
                   <div class="form-group">
                     <label for="">Stock + Compra</label>
-                    <input type="text" id="stock_total" disabled style="text-align: center;" class="form-control" >
+                    <input type="text" id="stock_total"  style="text-align: center;" class="form-control" >
                   </div>                  
                 </div>
 
@@ -520,7 +520,7 @@ include('../app/controllers/compras/listado_de_compras.php');
                 <div class="col-md-12">
                   <div class="form-group">
                     <label for="">Usuario</label>
-                    <input type="text" class="form-control" value="<?php echo $email_usuario?>" disabled>
+                    <input type="text" class="form-control" value="<?php echo $email_usuario?>" placeholder="correo de usuario">
                   </div>
                   <hr>
                 </div>
