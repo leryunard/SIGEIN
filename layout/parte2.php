@@ -4,29 +4,6 @@
 <!-- Main Footer -->
   <footer class="text-center text-white" style="background-color: #383c44; z-index: 8000; position: relative;">
     <!-- Grid container -->
-    <div class="container">
-      <!-- Section: Links -->
-      <section>
-        <!-- Grid row-->
-        <div class="row text-center d-flex justify-content-center pt-5">
-          <!-- Grid column -->
-          <div class="col-md-2">
-            <h6 class="text-uppercase font-weight-bold">
-              <a href="" class="text-white">Sobre nosotros</a>
-            </h6>
-          </div>
-          <!-- Grid column -->
-
-         
-        <!-- Grid row-->
-      </section>
-      <!-- Section: Links -->
-
-      <hr class="my-5" />
-      <!-- Section: Social -->
-
-      <!-- Section: Social -->
-    </div>
     <!-- Grid container -->
 
     <!-- Copyright -->

@@ -55,76 +55,29 @@ include('../app/controllers/almacen/listado_de_productos.php');
               <div class="table table-responsive">
                 <table id="example1" class="table table-bordered table-sm" style="background-color: white">
                   <thead>
-                    <tr>
-                      <th>
-                        <center># Pro.</center>
-                      </th>
-                      <th>
-                        <center>Código Producto</center>
-                      </th>
-                      <th>
-                        <center>Categoría</center>
-                      </th>
-                      <th>
-                        <center>Nombre</center>
-                      </th>
-                      <th>
-                        <center>Imagen</center>
-                      </th>
-                      <th>
-                        <center>Stock</center>
-                      </th>
-                      <th>
-                        <center>Precio Compra</center>
-                      </th>
-                      <th>
-                        <center>Precio Venta</center>
-                      </th>
-                      <th>
-                        <center>Fecha Compra</center>
-                      </th>
-                      <th>
-                        <center>Usuario</center>
-                      </th>
-                      <th>
-                        <center>Acciones</center>
-                      </th>
-                    </tr>
+                  <tr>
+                        <th><center># Pro.</center></th>
+                        <th><center>Código Producto</center></th>
+                        <th><center>Nombre</center></th>
+                        <th><center>Categoría</center></th>
+                        <th><center>Imagen</center></th>
+                        <th><center>Stock</center></th>
+                        <th><center>Precio Venta</center></th>
+                        <th><center>Usuario</center></th>
+                        <th><center>Acciones</center></th>
+                  </tr>
                   </thead>
                   <tbody>
-                    <?php
-                    $contador = 0;
-                    foreach ($productos_datos as $producto_dato) {
-                      $id_producto = $producto_dato['id_producto'] ?>
-                      <tr>
-                        <td>
-                          <center>
-                            <?php echo $contador = $contador + 1 ?>
-                          </center>
-                        </td>
-                        <td>
-                          <center>
-                            <?php echo $producto_dato['codigo'] ?>
-                          </center>
-                        </td>
-                        <td>
-                          <center>
-                            <?php echo $producto_dato['nombre_categoria'] ?>
-                          </center>
-                        </td>
-                        <td>
-                          <center>
-                            <?php echo $producto_dato['nombre'] ?>
-                          </center>
-                        </td>
-                        <td>
-                          <center>
-                            <?php
-                            $imagen_url = $URL . "/almacen/img_productos/" . $producto_dato['imagen'];
-                            echo "<img style='object-fit: contain'width='100px' height='100px' src='" . $imagen_url . "' alt='Imagen del producto'>";
-                            ?>
-                          </center>
-                        </td>
+                        <?php 
+                          $contador = 0;
+                          foreach ($productos_datos as $producto_dato){
+                            $id_producto = $producto_dato['id_producto'] ?>
+                            <tr>
+                                <td><center><?php echo $contador = $contador + 1?></center></td>
+                                <td><center><?php echo $producto_dato['codigo']?></center></td>
+                                <td><center><?php echo $producto_dato['nombre']?></center></td>
+                                <td><center><?php echo $producto_dato['nombre_categoria']?></center></td>
+                                <td><img src="<?php echo $URL."/almacen/img_productos/".$producto_dato['imagen']?>" alt="" width="100px" height="80px"></td>
 
 
                         <?php
@@ -155,38 +108,15 @@ include('../app/controllers/almacen/listado_de_productos.php');
                             <?php
                         }
 
-                        ?>
-                        <td>
-                          <center>
-                            <?php echo $producto_dato['precio_compra'] ?>
-                          </center>
-                        </td>
-                        <td>
-                          <center>
-                            <?php echo $producto_dato['precio_venta'] ?>
-                          </center>
-                        </td>
-                        <td>
-                          <center>
-                            <?php echo $producto_dato['fecha_ingreso'] ?>
-                          </center>
-                        </td>
-                        <td>
-                          <center>
-                            <?php echo $producto_dato['email'] ?>
-                          </center>
-                        </td>
-                        <td>
-                          <center>
-                            <div class="btn-group" style="width: 250px;">
-                              <a href="./show.php?id=<?php echo $id_producto; ?>" id type="button"
-                                class="btn btn-info btn-sm"><i class="fa fa-eye"></i> Ver</a>
-                              <a href="./update.php?id=<?php echo $id_producto; ?>" type="button"
-                                class="btn btn-success btn-sm"><i class="fa fa-pen"> Editar</i></a>
-                              <a href="./delete.php?id=<?php echo $id_producto; ?>" type="button"
-                                class="btn btn-danger btn-sm"><i class="fa fa-trash"> Borrar</i></a>
-                            </div>
-
+                                ?>
+                                <td><center><?php echo $producto_dato['precio_venta']?></center></td>
+                                <td><center><?php echo $producto_dato['email']?></center></td>
+                                <td><center>
+                                  <div class="btn-group">
+                                     <a href="./show.php?id=<?php echo $id_producto;?>" id type="button" class="btn btn-info btn-sm"><i class="fa fa-eye"></i> Ver</a>
+                                     <a href="./update.php?id=<?php echo $id_producto;?>" type="button" class="btn btn-success btn-sm"><i class="fa fa-pen"> Editar</i></a>
+                                     <a href="./delete.php?id=<?php echo $id_producto;?>" type="button" class="btn btn-danger btn-sm"><i class="fa fa-trash"> Borrar</i></a>
+                                   </div>
                           </center>
                         </td>
                       </tr>
