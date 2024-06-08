@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="../public/templates/AdminLTE-3.2.0/dist/css/adminlte.min.css">
   <!--Sweet alert-->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
   <link rel="stylesheet" type="text/css" href="../public/estilos/estiloLogin.css">
   
 </head>

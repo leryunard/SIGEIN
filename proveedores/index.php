@@ -16,6 +16,9 @@ include('../app/controllers/proveedores/listado_de_proveedores.php');
             <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#modal-create">
              <i class="fa fa-plus"></i> Nuevo Proveedor
             </button>
+            <a href="reporte_proveedores.php" class="btn btn-success">
+            <i class="fa fa-download"></i> Descargar Reporte PDF
+            </a>
             </h1>
 
           </div><!-- /.col -->
