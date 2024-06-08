@@ -15,8 +15,8 @@ include('../app/controllers/clientes/listado_de_cliente.php');
             <div class="row mb-2">
                 <div class="col-sm-12">
                     <h1 class="m-0">Listado de ventas realizadas </h1>
-                </div><!-- /.col -->
 
+                </div><!-- /.col -->
             </div><!-- /.row -->
         </div><!-- /.container-fluid -->
     </div>
@@ -311,6 +311,12 @@ include('../app/controllers/clientes/listado_de_cliente.php');
                                     ?>
                                     </tbody>
                                 </table>
+                                <div class="col-sm-8 align-center">
+                                        <h3 class="sm-0">Reporte de productos mas vendidos</h3>
+                                        <a href="reporte_productos.php" class="btn btn-success">
+                                        <i class="fa fa-download"></i> Descargar Reporte PDF
+                                        </a>
+                                </div>
                             </div>
 
                         </div>

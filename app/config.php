@@ -1,15 +1,14 @@
 <?php
-    define('SERVIDOR','localhost');
+    define('SERVIDOR','127.0.0.1');
     define('USUARIO','root');
     define('PASSWORD','');
     define('BD','sistemadeventas');
-
     $servidor = "mysql:dbname=".BD.";host=".SERVIDOR; 
 
     try{
         $pdo = new PDO($servidor, username: USUARIO, password: PASSWORD);
         $pdo -> exec("set names utf8");
-        //echo "La conexión a la base de datos fue éxitosa";
+        echo "La conexión a la base de datos fue éxitosa";
     }catch (PDOException $e){
         //print_r($e);
         echo "Error al conectar a la base de datos NUEVAMENTE";
