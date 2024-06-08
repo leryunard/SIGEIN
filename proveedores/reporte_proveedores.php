@@ -1,7 +1,21 @@
 <?php
-// Iniciar el buffer de salida para evitar cualquier salida antes de la generación del PDF
-ob_start();
+// Obtener los datos de la imagen desde la solicitud POST
+if (isset($_POST['imgData'])) {
+    $imgData = $_POST['imgData'];
+    
+    // Decodificar la imagen base64
+    $imgData = str_replace(' ', '+', $imgData);
+    $imgData = base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $imgData));
 
+    // Guardar la imagen temporalmente en el servidor
+    $filePath = 'C:/xampp/htdocs/SIGEIN/proveedores/temp_chart.png';
+    if (file_put_contents($filePath, $imgData) === false) {
+        die('Error al guardar la imagen');
+    }
+} else {
+}
+
+// Incluir el archivo TCPDF y la configuración
 require_once('../app/tcpdf-main/tcpdf.php');
 include('../app/config.php');
 
@@ -23,6 +37,7 @@ $query_compras = $pdo->prepare($sql_compras);
 $query_compras->execute();
 $compras_datos = $query_compras->fetchAll(PDO::FETCH_ASSOC);
 
+// Clase extendida de TCPDF
 class MYPDF extends TCPDF {
     public function Header() {
         $this->SetFont('helvetica', 'B', 12);
@@ -36,6 +51,7 @@ class MYPDF extends TCPDF {
     }
 }
 
+// Crear una instancia del PDF
 $pdf = new MYPDF();
 $pdf->SetCreator(PDF_CREATOR);
 $pdf->SetAuthor('Tu Empresa');
@@ -43,9 +59,11 @@ $pdf->SetTitle('Reporte de Compras por Proveedor');
 $pdf->SetSubject('Reporte PDF');
 $pdf->SetKeywords('TCPDF, PDF, report, compras, proveedores');
 
+// Agregar una página al PDF
 $pdf->AddPage();
 $pdf->SetFont('helvetica', '', 12);
 
+// Crear una tabla HTML con los datos de las compras
 $html = '<table border="1" cellspacing="3" cellpadding="4">
 <thead>
 <tr>
@@ -64,14 +82,18 @@ foreach ($compras_datos as $compra_dato) {
 
 $html .= '</tbody></table>';
 
+// Escribir el HTML en el PDF
 $pdf->writeHTML($html, true, false, true, false, '');
 
-include('./grafico.php');
-// Incluir el gráfico generado en el PDF
-$pdf->Image($imgData, $x, $y, $w, $h);
+// Ruta de la imagen JPEG
+$imagePath = 'C:/xampp/htdocs/SIGEIN/proveedores/temp_chart.png';
+
+// Agregar la imagen al PDF
+$pdf->Image($imagePath, 20, 140, 180, 120, 'PNG', '', 'T', false, 300, '', false, false, 0, false, false, false);
 
 // Limpiar el buffer de salida antes de enviar el PDF
 ob_end_clean();
 
+// Salida del PDF
 $pdf->Output('reporte_compras_proveedores.pdf', 'I');
 ?>
