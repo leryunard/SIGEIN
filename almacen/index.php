@@ -15,6 +15,9 @@ include('../app/controllers/almacen/listado_de_productos.php');
           <h1 class="m-0">
             <p style=color:#1E90FF>Listado de Productos
           </h1>
+            <a href="reporte_categoria.php" class="btn btn-success">
+            <i class="fa fa-download"></i> Descargar Reporte PDF
+            </a>
           </p>
         </div><!-- /.col -->
         <div class="col-sm-6"
