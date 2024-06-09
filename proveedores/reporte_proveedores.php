@@ -2,7 +2,7 @@
 // Obtener los datos de la imagen desde la solicitud POST
 if (isset($_POST['imgData'])) {
     $imgData = $_POST['imgData'];
-    
+
     // Decodificar la imagen base64
     $imgData = str_replace(' ', '+', $imgData);
     $imgData = base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $imgData));
@@ -38,16 +38,19 @@ $query_compras->execute();
 $compras_datos = $query_compras->fetchAll(PDO::FETCH_ASSOC);
 
 // Clase extendida de TCPDF
-class MYPDF extends TCPDF {
-    public function Header() {
+class MYPDF extends TCPDF
+{
+    public function Header()
+    {
         $this->SetFont('helvetica', 'B', 12);
         $this->Cell(0, 15, 'Reporte de Compras por Proveedor', 0, 1, 'C');
     }
 
-    public function Footer() {
+    public function Footer()
+    {
         $this->SetY(-15);
         $this->SetFont('helvetica', 'I', 8);
-        $this->Cell(0, 10, 'Page '.$this->getAliasNumPage().' / '.$this->getAliasNbPages(), 0, 0, 'C');
+        $this->Cell(0, 10, 'Page ' . $this->getAliasNumPage() . ' / ' . $this->getAliasNbPages(), 0, 0, 'C');
     }
 }
 
@@ -75,8 +78,8 @@ $html = '<table border="1" cellspacing="3" cellpadding="4">
 
 foreach ($compras_datos as $compra_dato) {
     $html .= '<tr>
-    <td>'.$compra_dato['nombre_proveedor'].'</td>
-    <td>'.$compra_dato['total_cantidad'].'</td>
+    <td>' . $compra_dato['nombre_proveedor'] . '</td>
+    <td>' . $compra_dato['total_cantidad'] . '</td>
     </tr>';
 }
 
@@ -94,6 +97,12 @@ $pdf->Image($imagePath, 20, 140, 180, 120, 'PNG', '', 'T', false, 300, '', false
 // Limpiar el buffer de salida antes de enviar el PDF
 ob_end_clean();
 
-// Salida del PDF
-$pdf->Output('reporte_compras_proveedores.pdf', 'I');
+// Obtén la fecha actual en el formato dd-mm-yy
+$fecha_actual = date('d-m-y');
+
+// Usa la fecha actual en el nombre del archivo
+$nombre_archivo = 'compras_por_proveedor_' . $fecha_actual . '.pdf';
+
+// Salida del PDF con el nuevo nombre de archivo
+$pdf->Output($nombre_archivo, 'D');
 ?>

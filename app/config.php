@@ -8,7 +8,6 @@
     try{
         $pdo = new PDO($servidor, username: USUARIO, password: PASSWORD);
         $pdo -> exec("set names utf8");
-        echo "La conexión a la base de datos fue éxitosa";
     }catch (PDOException $e){
         //print_r($e);
         echo "Error al conectar a la base de datos NUEVAMENTE";

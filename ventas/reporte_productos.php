@@ -99,6 +99,12 @@ $pdf->writeHTML($html, true, false, true, false, '');
 // Limpiar el buffer de salida antes de enviar el PDF
 ob_end_clean();
 
-// Salida del PDF
-$pdf->Output('reporte_compras_proveedores.pdf', 'I');
+// Obtén la fecha actual en el formato dd-mm-yy
+$fecha_actual = date('d-m-y');
+
+// Usa la fecha actual en el nombre del archivo
+$nombre_archivo = 'productos_mas_vendidos_' . $fecha_actual . '.pdf';
+
+// Salida del PDF con el nuevo nombre de archivo
+$pdf->Output($nombre_archivo, 'D');
 ?>
